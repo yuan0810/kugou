@@ -199,6 +199,7 @@ a {
 }
 
 .nav .nav-nav .nav-left > li .nav-slide {
+  z-index: 999;
   background-color: #2c323b;
   display: none;
 }
@@ -293,3 +294,137 @@ a {
 }
 
 /* 导航栏结束 */
+/* 轮播图开始 */
+.slideshow {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 445px;
+  overflow: hidden;
+  /* 按钮 */
+  /* 小点 */
+}
+
+.slideshow li {
+  width: 100%;
+  height: 445px;
+}
+
+.slideshow .slideshow-one {
+  background: url(../images/20160713154957678313.jpg) top center;
+}
+
+.slideshow .slideshow-two {
+  background: url(../images/20170220150607997002.jpg) top center;
+}
+
+.slideshow .slideshow-three {
+  background: url(../images/20170112174112889575.jpg) top center;
+}
+
+.slideshow .slideshow-four {
+  background: url(../images/20170817004730859707.jpg) top center;
+}
+
+.slideshow .slideshow-five {
+  background: url(../images/20170817001651463956.jpg) top center;
+}
+
+.slideshow .slideshow-six {
+  background: url(../images/20170817001918883413.jpg) top center;
+}
+
+.slideshow .slideshow-seven {
+  background: url(../images/20170816121838867354.jpg) top center;
+}
+
+.slideshow .slideshow-left-btn {
+  position: absolute;
+  top: 162.5px;
+  left: 0;
+  width: 60px;
+  height: 120px;
+  background: url(../images/sprite.png) 0 -755px no-repeat;
+  display: none;
+}
+
+.slideshow .slideshow-left-btn:hover {
+  background: url(../images/sprite.png) 0 -880px no-repeat;
+}
+
+.slideshow .slideshow-right-btn {
+  position: absolute;
+  top: 162.5px;
+  right: 0;
+  width: 60px;
+  height: 120px;
+  background: url(../images/sprite.png) 0 -1130px no-repeat;
+  display: none;
+}
+
+.slideshow .slideshow-right-btn:hover {
+  background: url(../images/sprite.png) 0 -1005px no-repeat;
+}
+
+.slideshow:hover .slideshow-left-btn {
+  display: block;
+}
+
+.slideshow:hover .slideshow-right-btn {
+  display: block;
+}
+
+.slideshow .slideshow-point {
+  position: absolute;
+  top: 355px;
+  left: 560px;
+}
+
+.slideshow .slideshow-point li {
+  float: left;
+  margin: 0 7px;
+  width: 12px;
+  height: 10px;
+  background: url(../images/sprite.png) 0 -22px no-repeat;
+}
+
+.slideshow .down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font: 13px/1.5 微软雅黑,simsun,sans-serif;
+}
+
+.slideshow .down a {
+  display: block;
+  float: left;
+  width: 130px;
+  height: 25px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+}
+
+.slideshow .down .pc {
+  margin-left: 330px;
+  padding: 0 45px 0 30px;
+  background: url(../images/pc.png) 20px center no-repeat;
+}
+
+.slideshow .down .iphone {
+  margin: 20px 0 0 55px;
+  padding: 0 45px 0 30px;
+  background: url(../images/mac.png) left center no-repeat;
+}
+
+.slideshow .down .android {
+  margin-left: 55px;
+  padding-left: 30px;
+  background: url(../images/andriod.png) left center no-repeat;
+}
+
+/* 主体部分 */
