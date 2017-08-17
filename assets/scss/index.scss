@@ -15,6 +15,7 @@
 a{
 	text-decoration: none;
 }
+/* 头部开始 */
 .header{
 	position:relative;
 	overflow:hidden;
@@ -131,6 +132,8 @@ a{
 		}
 	}
 }
+/* 头部结束 */
+/* 导航栏开始 */
 .nav{
 	width:100%;
 	height:55px;
@@ -141,26 +144,56 @@ a{
 	margin:0 auto;
 	.nav-left{
 		float:left;
-		li{
+		>li{
 			float:left;
 			@include font;
 			line-height:55px;
-			a{
+			>a{
 				display:block;
 				padding:0 30px;
 				font-size:16px;
 				color:#ddd;
-			}
-			.more{
-				background:url(../images/arrowMored.png) 72px 25px no-repeat;
 				&:hover{
-					background:url(../images/arrowMoreu.png) 72px 25px no-repeat;
 					background-color:#0c8ed9;
 					color:#fff;
-	color:#fff;
 				}
 			}
-
+			.more{
+				padding:0 40px;
+				background:url(../images/arrowMored.png) 80px 25px no-repeat;
+				&:hover{
+					background:url(../images/arrowMoreu.png) 80px 25px no-repeat;
+					background-color:#0c8ed9;
+					color:fff;
+				}
+			}
+			.nav-slide{
+				background-color:#2c323b;
+				display:none;
+				>li{
+					line-height:34px;
+					>a{
+						display:block;
+						text-align:center;
+						font-size:16px;
+						color:#ddd;
+						&:hover{
+							border-top:1px solid #383d44;
+							background-color:#2d343d;
+						}
+					}
+				}
+			}
+			&.li-more:hover{
+				position:relative;
+				.nav-slide{
+					position: absolute;
+					top:55px;
+					left:0;
+					width:100%;
+					display:block;
+				}
+			}
 		}
 	}
 	.nav-right{
@@ -168,19 +201,50 @@ a{
 		li{
 			float:left;
 			@include font;
+			margin-left:30px;
 			line-height:55px;
 			a{
-				display:block;
 				padding-left:20px;
 				color:#bbb;
 			}
-			
-
 		}
+		.nav-one{
+			background:url(../images/sprite.png) 0px -119px no-repeat;
+			&:hover{
+				background:url(../images/sprite.png) 0px -101px no-repeat;
+				color:#14a9ff;
+			}
+		}
+		.nav-two{
+			background:url(../images/sprite.png) 0px -155px no-repeat;
+			&:hover{
+				background:url(../images/sprite.png) 0px -137px no-repeat;
+				color:#14a9ff;
+			}
+		}
+		.nav-three{
+			background:url(../images/sprite.png) 0px -191px no-repeat;
+			&:hover{
+				background:url(../images/sprite.png) 0px -173px no-repeat;
+				color:#14a9ff;
+			}
+		}
+		.nav-four{
+			background:url(../images/sprite.png) 0px -226px no-repeat;
+			&:hover{
+				background:url(../images/sprite.png) 0px -208px no-repeat;
+				color:#14a9ff;
+			}
+		}
+		.nav-five{
+			background:url(../images/sprite.png) 0px -281px no-repeat;
+			&:hover{
+				background:url(../images/sprite.png) 0px -245px no-repeat;
+				color:#14a9ff;
+			}
+		}
+
 	}
 }
 }
-.active{
-	background-color:#0c8ed9;
-	color:#fff;
-}
+/* 导航栏结束 */
