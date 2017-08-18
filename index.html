@@ -1,102 +1,519 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>酷狗音乐-音乐总有新玩法</title>
-	<link href="assets/images/index.ico" rel="icon">
-	<link rel="stylesheet" href="assets/css/index.css">
-	<!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_387406_qubwidq89mnuq5mi.css">
+    <meta charset="UTF-8">
+    <title>酷狗音乐-音乐总有新玩法</title>
+    <link href="assets/images/index.ico" rel="icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_387406_qubwidq89mnuq5mi.css">
 </head>
+
 <body>
-	<div id="container">
-	<!-- 头部开始 -->
-		<div class="header">
-			<div class="logo">
-				<a href="">
-					<img src="assets/images/logo.png" height="37" width="153" alt="">
-				</a>
-			</div>
-			<div class="search">
-				<input type="text">
-				<div class="btn">
-					<i></i>
-				</div>
-			</div>
-			<div class="header-right">
-				<ul class="list">
-					<li><a href="">客服中心</a></li>
-					<li><a href="">招贤纳士</a></li>
-					<li><a href="">会员中心</a></li>
-				</ul>
-				<div class="login-reg">
-					<a href="" class="login">登录</a>
-					<a href="" class="reg">注册</a>
-				</div>
-			</div>
-		</div>
-		<!-- 头部结束 -->
-		<!-- 导航栏开始 -->
-		<div class="nav">
-			<div class="nav-nav">
-				<ul class="nav-left">
-					<li><a href="">首页</a></li>
-					<li><a href="">榜单</a></li>
-					<li><a href="">下载客户端</a></li>
-					<li class="li-more"><a href="" class="more">
-					更多
-					</a>
-					<ul class="nav-slide">
-						<li><a href="">电台</a></li>
-						<li><a href="">MV</a></li>
-						<li><a href="">歌手</a></li>
-						<li><a href="">歌单</a></li>
-					</ul>
-					</li>
-				</ul>
-				<ul class="nav-right">
-					<li><a href="" class="nav-one">音乐直播</a></li>
-					<li><a href="" class="nav-two">酷狗LIVE</a></li>
-					<li><a href="" class="nav-three">音乐人</a></li>
-					<li><a href="" class="nav-four">游戏</a></li>
-					<li><a href="" class="nav-five">商城</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- 导航栏结束 -->
-		<!-- 轮播图开始 -->
-		<div class="slideshow">
-		<ul>
-			<li class="slideshow-one"></li>
-			<li class="slideshow-two"></li>
-			<li class="slideshow-three"></li>
-			<li class="slideshow-four"></li>
-			<li class="slideshow-five"></li>
-			<li class="slideshow-six"></li>
-			<li class="slideshow-seven"></li>
-		</ul>
-		<!-- 按钮 -->
-		<div class="slideshow-left-btn"></div>
-		<div class="slideshow-right-btn"></div>
-		<!-- 小点 -->
-		<ol class="slideshow-point">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ol>
-		<div class="down">
-			<a href="" class="pc">下载PC端</a>
-			<a href="" class="iphone">下载iPhone版</a>
-			<a href="" class="android">下载Android版</a>
-		</div>
-		</div>
-		<!-- 主体部分 -->
-	</div>
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="assets/js/index.js"></script>
+    <div id="container">
+        <!-- 头部开始 -->
+        <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/images/logo.png" height="37" width="153" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text">
+                <div class="btn">
+                    <i></i>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="list">
+                    <li><a href="">客服中心</a></li>
+                    <li><a href="">招贤纳士</a></li>
+                    <li><a href="">会员中心</a></li>
+                </ul>
+                <div class="login-reg">
+                    <a href="" class="login">登录</a>
+                    <a href="" class="reg">注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 头部结束 -->
+        <!-- 导航栏开始 -->
+        <div class="nav">
+            <div class="nav-nav">
+                <ul class="nav-left">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">榜单</a></li>
+                    <li><a href="">下载客户端</a></li>
+                    <li class="li-more"><a href="" class="more">
+                    更多
+                    </a>
+                        <ul class="nav-slide">
+                            <li><a href="">电台</a></li>
+                            <li><a href="">MV</a></li>
+                            <li><a href="">歌手</a></li>
+                            <li><a href="">歌单</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="" class="nav-one">音乐直播</a></li>
+                    <li><a href="" class="nav-two">酷狗LIVE</a></li>
+                    <li><a href="" class="nav-three">音乐人</a></li>
+                    <li><a href="" class="nav-four">游戏</a></li>
+                    <li><a href="" class="nav-five">商城</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航栏结束 -->
+        <!-- 轮播图开始 -->
+        <div class="slideshow">
+            <ul>
+                <li class="slideshow-one"></li>
+                <li class="slideshow-two"></li>
+                <li class="slideshow-three"></li>
+                <li class="slideshow-four"></li>
+                <li class="slideshow-five"></li>
+                <li class="slideshow-six"></li>
+                <li class="slideshow-seven"></li>
+            </ul>
+            <!-- 按钮 -->
+            <div class="slideshow-left-btn"></div>
+            <div class="slideshow-right-btn"></div>
+            <!-- 小点 -->
+            <ol class="slideshow-point">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <div class="down">
+                <a href="" class="pc">下载PC端</a>
+                <span>|</span>
+                <a href="" class="iphone">下载iPhone版</a>
+                <span>|</span>
+                <a href="" class="android">下载Android版</a>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="main">
+            <!-- 主体上部分 -->
+            <div class="main-top">
+                <div class="main-left">
+                    <div class="left-top">
+                        <h3><span>精选</span>歌单</h3>
+                        <a href="">更多</a>
+                    </div>
+                    <div class="left-middle">
+                        <div class="middle-left">
+                            <p class="cptT">
+                                <span class="num">8.4万</span>
+                                <span class="icon-music"></span>
+                            </p>
+                            <a href=""><img src="assets/images/20170329181749567378.jpg" alt="" width="325"></a>
+                            <div class="introduce">
+                                <p class="songListName">【欧美】柔情嗓音，舒缓身心</p>
+                                <p class="songListSinger">清香白莲</p>
+                            </div>
+                            <div class="mask">
+                                <div class="btn"></div>
+                            </div>
+                        </div>
+                        <div class="middle-right">
+                            <ul>
+                                <li>
+                                    <p class="cptT">
+                                        <span class="num">30.3万</span>
+                                        <span class="icon-music"></span>
+                                    </p>
+                                    <a href=""><img src="assets/images/20170815114616247314.jpg" alt="" width="160px"></a>
+                                    <div class="introduce">
+                                        <p class="songListName">17年内地电影总票房榜上榜电影原声收录</p>
+                                        <p class="songListSinger">爱听歌的小编L</p>
+                                    </div>
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="cptT">
+                                        <span class="num">24.3万</span>
+                                        <span class="icon-music"></span>
+                                    </p>
+                                    <a href=""><img src="assets/images/20170814165439337463.jpg" alt="" width="160px"></a>
+                                    <div class="introduce">
+                                        <p class="songListName">亲爱的G.E.M.，生日快乐</p>
+                                        <p class="songListSinger">筱筱</p>
+                                    </div>
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="cptT">
+                                        <span class="num">24.3万</span>
+                                        <span class="icon-music"></span>
+                                    </p>
+                                    <a href=""><img src="assets/images/20170816141114923761.jpg" alt="" width="160px;"></a>
+                                    <div class="introduce">
+                                        <p class="songListName">『狗善党的春天』终于迎来没看到的结局~</p>
+                                        <p class="songListSinger">醉西楼</p>
+                                    </div>
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="cptT">
+                                        <span class="num">2895.4万</span>
+                                        <span class="icon-music"></span>
+                                    </p>
+                                    <a href=""><img src="assets/images/20170527180146229856.jpg" alt="" width="160px"></a>
+                                    <div class="introduce">
+                                        <p class="songListName">有没有那么一首歌，一听见就崩溃了</p>
+                                        <p class="songListSinger">世纪缘</p>
+                                    </div>
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-top">
+                        <h3><span>热门</span>榜单</h3>
+                        <a href="">更多</a>
+                    </div>
+                    <div class="hot">
+                        <a href="">
+                            <img src="assets/images/T1M4h4BKKj1RCvBVdK.jpg" height="98" width="98" alt="">
+                        </a>
+                        <dl>
+                            <dt>酷狗飙升榜</dt>
+                            <dd>1 . 杨培安 - 生死相随【秦时丽人明月心电视剧推广曲】</dd>
+                            <dd>2 . 戴荃 - 河神之歌【十万个冷笑话2电影“正经版”推广曲】</dd>
+                            <span></span>
+                        </dl>
+                    </div>
+                    <div class="hot">
+                        <img src="assets/images/T1fHd4BXd_1RCvBVdK.jpg" height="98" width="98" alt="">
+                        <dl>
+                            <dt>酷狗TOP500</dt>
+                            <dd>1 . 金志文、徐佳莹 - 远走高飞</dd>
+                            <dd>2 . 杨宗纬、张碧晨 - 凉凉【三生三世十里桃花电视剧片尾曲】</dd>
+                            <span></span>
+                        </dl>
+                    </div>
+                    <div class="hot">
+                        <img src="assets/images/T1Fpd4BKbg1RCvBVdK.jpg" height="98" width="98" alt="">
+                        <dl>
+                            <dt>网络红歌榜</dt>
+                            <dd>1 . 金南玲 - 逆流成河</dd>
+                            <dd>2 . 庄心妍 - 走着走着就散了</dd>
+                            <span></span>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- 广告条 -->
+            <img src="assets/images/random_data/affb992f1b13294aeca9f3fbec32b3be.jpg" alt="">
+            <!-- 选项卡 -->
+            <div class="option">
+                <div class="option-left">
+                    <div class="newsong">
+                        <h3 class="newlogo"></h3>
+                        <ul class="newlist">
+                            <li>华语</li>
+                            <li>欧美</li>
+                            <li>韩国</li>
+                            <li>日本</li>
+                        </ul>
+                        <div class="newbtn">
+                            <span></span>
+                            <p>全部播放</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="songname">杨坤 - 流浪狗也有乡愁</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:05</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:28</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">神马乐团 - 来不及</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:34</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">A-Lin - 未单身</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:34</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">GAI - 王者降临</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">02:55</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">郑源 - 刺青</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:15</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">阿悄 - 绿茶和白莲</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:10</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">威仔、阿夏 - 这个夏天我们离别</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:45</span>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page">
+                        <span class="lastpage"></span>
+                        <span class="changepage">1/3</span>
+                        <span class="nextpage"></span>
+                    </div>
+                </div>
+                <div class="option-right">
+                    <div class="recommend">
+                        <h3></h3>
+                        <p>更多</p>
+                    </div>
+                    <div class="MV">
+                        <a href=""><img src="assets/images/20170816173502808271.jpg" alt="" width="320" height="175"></a>
+                        <div class="introduce">
+                            <p class="songListName">DARLING</p>
+                            <p class="songListSinger">太阳TAEYANG</p>
+                        </div>
+                        <div class="mask">
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="MV-left">
+                        <a href=""><img src="assets/images/20170816180043718412.jpg" alt="" width="154" height="84"></a>
+                        <div class="introduce">
+                            <p class="songListName">穿越火线</p>
+                            <p class="songListSinger">G.E.M.邓紫棋</p>
+                        </div>
+                        <div class="mask">
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="MV-right">
+                        <a href=""><img src="assets/images/20170815163832640247.jpg" alt="" width="154" height="84"></a>
+                        <div class="introduce">
+                            <p class="songListName">好想你</p>
+                            <p class="songListSinger">何洁</p>
+                        </div>
+                        <div class="mask">
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 选项卡完成 -->
+            <!-- 广告条 -->
+            <img src="assets/images/a_data/5a9ca746290f3bffd598a9d02ea270b8.jpg">
+            <!-- MV列表 -->
+            <div class="hotradio">
+                <div class="hotradio-left">
+                    <div class="recommend">
+                        <h3></h3>
+                        <p>更多</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_1.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">KTV必点曲</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_2.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">中文DJ</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_3.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">酷狗热歌</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_4.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">网络红歌</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista listt">
+                                <div class="radio">
+                                    <img src="assets/images/radio_5.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">经典</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_6.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">老情歌</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_7.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">新歌</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_8.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">动漫</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista">
+                                <div class="radio">
+                                    <img src="assets/images/radio_9.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">轻音乐</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="lista listt">
+                                <div class="radio">
+                                    <img src="assets/images/radio_10.jpg" alt="" width="100" height="100">
+                                    <div class="mask">
+                                        <div class="btn"></div>
+                                    </div>
+                                </div>
+                                <div class="radiokind">最爱成名曲</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hotradio-right">
+                    <div class="newsong">
+                        <h3 class="newlogo"></h3>
+                        <ul class="newlist">
+                            <li>华语</li>
+                            <li>欧美</li>
+                            <li>日韩</li>
+                        </ul>
+                        <p class="more">更多</p>
+                    </div>
+                    <div class="hotsinger">
+                        <div class="hotsinger-big">
+                            <a href="">
+                                 <img src="assets/images/20170713161536456.jpg" width="160px" height="160px">
+                            </a>
+                            <div class="singer">
+                                <p>薛之谦</p>
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="hotsinger-big">
+                            <a href="">
+                            <img src="assets/images/20170810103307128.jpg" width="160px" height="160px">
+                        </a>
+                            <div class="singer">TFBOYS</div>
+                            <div class="mask"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
