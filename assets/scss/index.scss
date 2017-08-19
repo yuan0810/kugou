@@ -1,10 +1,10 @@
-/* *{
-    margin:0;
-    padding:0;
-    list-style:none;
-} */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-@mixin font {
+*/ @mixin font {
     font: 13px/1.5 微软雅黑, simsun, sans-serif;
 }
 
@@ -17,6 +17,63 @@
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -595,6 +652,63 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 头部结束 */
 
 
@@ -713,6 +827,63 @@ a {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1072,6 +1243,63 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 轮播图结束 */
 
 
@@ -1100,12 +1328,7 @@ a {
                     width: 120px;
                     height: 30px;
                     margin-right: 25px;
-                    color: #555;
-                    line-height: 30px;
-                    font-size: 25px;
-                    span {
-                        color: #009af3;
-                    }
+                    background: url(../images/selectlist.jpg) no-repeat;
                 }
                 a {
                     display: block;
@@ -1328,14 +1551,9 @@ a {
                     width: 120px;
                     height: 30px;
                     margin-right: 25px;
-                    color: #555;
-                    line-height: 30px;
-                    font-size: 25px;
-                    span {
-                        color: #009af3;
-                    }
+                    background: url(../images/hotlist.jpg) no-repeat;
                 }
-                a {
+                >a {
                     display: block;
                     float: right;
                     color: #999;
@@ -1351,37 +1569,74 @@ a {
                 margin-bottom: 15px;
                 background-color: #f6f6f6;
                 @include font;
-                img: {
-                    float: left;
-                }
-                dl {
-                    float: right;
-                    width: 200px;
-                    height: 68px;
-                    padding: 15px 10px;
-                    dt {
-                        width: 200px;
-                        height: 24px;
-                        line-height: 24px;
-                        font-size: 14px;
-                        font-weight: bold;
-                    }
-                    dd {
-                        width: 170px;
-                        height: 24px;
-                        line-height: 24px;
-                        font-size: 14px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    span {
-                        float: right;
-                        margin-top: -44px;
-                        width: 7px;
-                        height: 14px;
+                &.hot:hover {
+                    .mask {
                         display: block;
-                        background: url(../images/sprite.png) 0 -322px no-repeat;
+                    }
+                }
+                >a {
+                    display: inline-block;
+                    .hot-img {
+                        float: left;
+                        position: relative;
+                        width: 98px;
+                        height: 98px;
+                    }
+                    .mask {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 98px;
+                        height: 98px;
+                        background: rgba(0, 0, 0, .3);
+                        display: none;
+                        .btn {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: 36px;
+                            height: 36px;
+                            background: url(../images/sprite.png) 0 -401px no-repeat;
+                            &:hover {
+                                background: url(../images/sprite.png) 0 -360px no-repeat;
+                            }
+                        }
+                    }
+
+                    dl {
+                        float: right;
+                        width: 200px;
+                        height: 68px;
+                        padding: 15px 10px;
+                        dt {
+                            width: 200px;
+                            height: 24px;
+                            line-height: 24px;
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #333;
+                        }
+                        dd {
+                            width: 170px;
+                            height: 24px;
+                            line-height: 24px;
+                            font-size: 14px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: #555;
+                        }
+                        span {
+                            float: right;
+                            margin-top: -44px;
+                            width: 7px;
+                            height: 14px;
+                            display: block;
+                            background: url(../images/sprite.png) 0 -322px no-repeat;
+                        }
                     }
                 }
             }
@@ -1938,4 +2193,82 @@ a {
         }
     }
     /* MV列表完成 */
+    /* 合作伙伴 */
+    .partner {
+        width: 100%;
+        height: 276px;
+        margin-top: 40px;
+        font-size: 0;
+        .partner-title {
+            width: 100%;
+            height: 30px;
+            padding-bottom: 30px;
+            background: url(../images/partner.jpg) no-repeat;
+        }
+        .hz-logo {
+            width: 1010px;
+            height: 216px;
+
+            a {
+                display: inline-block;
+                width: 130px;
+                height: 58px;
+                border: 1px dashed #ccc;
+                margin: 0 12px 12px 0;
+            }
+        }
+    }
+    /* 合作伙伴完成 */
+    /* 友情链接 */
+    .friend {
+        width: 100%;
+        height: 168px;
+        margin-top: 30px;
+        @include font;
+        .friend-logo {
+            width: 100%;
+            height: 30px;
+            padding-bottom: 30px;
+            h3 {
+                display: inline-block;
+                float: left;
+                width: 120px;
+                height: 30px;
+                margin-right: 25px;
+                background: url(../images/friendLink.jpg) no-repeat;
+            }
+            >a {
+                float: right;
+                line-height: 30px;
+                display: inline-block;
+                color: #999;
+                &:hover {
+                    color: #009af3;
+                }
+            }
+        }
+        .friend-name {
+            width: 100%;
+            height: 88px;
+            padding-bottom: 20px;
+            font-size: 0;
+            >a {
+                display: inline-block;
+                width: 125px;
+                height: 24px;
+                margin-bottom: 20px;
+                color: #555;
+                font-size: 13px;
+                &:hover {
+                    color: #009af3;
+                }
+            }
+        }
+    }
 }
+
+
+/* 主体部分完成 */
+
+
+/* 主体完成

@@ -446,6 +446,9 @@ a {
   /* 广告条 */
   /* MV列表开始 */
   /* MV列表完成 */
+  /* 合作伙伴 */
+  /* 合作伙伴完成 */
+  /* 友情链接 */
 }
 
 .main .main-top {
@@ -471,13 +474,7 @@ a {
   width: 120px;
   height: 30px;
   margin-right: 25px;
-  color: #555;
-  line-height: 30px;
-  font-size: 25px;
-}
-
-.main .main-top .main-left .left-top h3 span {
-  color: #009af3;
+  background: url(../images/selectlist.jpg) no-repeat;
 }
 
 .main .main-top .main-left .left-top a {
@@ -725,23 +722,17 @@ a {
   width: 120px;
   height: 30px;
   margin-right: 25px;
-  color: #555;
-  line-height: 30px;
-  font-size: 25px;
+  background: url(../images/hotlist.jpg) no-repeat;
 }
 
-.main .main-top .main-right .right-top h3 span {
-  color: #009af3;
-}
-
-.main .main-top .main-right .right-top a {
+.main .main-top .main-right .right-top > a {
   display: block;
   float: right;
   color: #999;
   margin-top: 7px;
 }
 
-.main .main-top .main-right .right-top a:hover {
+.main .main-top .main-right .right-top > a:hover {
   color: #009af3;
 }
 
@@ -751,25 +742,66 @@ a {
   margin-bottom: 15px;
   background-color: #f6f6f6;
   font: 13px/1.5 微软雅黑, simsun, sans-serif;
-  img-float: left;
 }
 
-.main .main-top .main-right .hot dl {
+.main .main-top .main-right .hot.hot:hover .mask {
+  display: block;
+}
+
+.main .main-top .main-right .hot > a {
+  display: inline-block;
+}
+
+.main .main-top .main-right .hot > a .hot-img {
+  float: left;
+  position: relative;
+  width: 98px;
+  height: 98px;
+}
+
+.main .main-top .main-right .hot > a .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 98px;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.main .main-top .main-right .hot > a .mask .btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background: url(../images/sprite.png) 0 -401px no-repeat;
+}
+
+.main .main-top .main-right .hot > a .mask .btn:hover {
+  background: url(../images/sprite.png) 0 -360px no-repeat;
+}
+
+.main .main-top .main-right .hot > a dl {
   float: right;
   width: 200px;
   height: 68px;
   padding: 15px 10px;
 }
 
-.main .main-top .main-right .hot dl dt {
+.main .main-top .main-right .hot > a dl dt {
   width: 200px;
   height: 24px;
   line-height: 24px;
   font-size: 14px;
   font-weight: bold;
+  color: #333;
 }
 
-.main .main-top .main-right .hot dl dd {
+.main .main-top .main-right .hot > a dl dd {
   width: 170px;
   height: 24px;
   line-height: 24px;
@@ -777,9 +809,10 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #555;
 }
 
-.main .main-top .main-right .hot dl span {
+.main .main-top .main-right .hot > a dl span {
   float: right;
   margin-top: -44px;
   width: 7px;
@@ -1424,3 +1457,85 @@ a {
 .main .hotradio .hotradio-right .hotsinger-point > li a:hover {
   background: url(../images/sprite.png) 0 0 no-repeat;
 }
+
+.main .partner {
+  width: 100%;
+  height: 276px;
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.main .partner .partner-title {
+  width: 100%;
+  height: 30px;
+  padding-bottom: 30px;
+  background: url(../images/partner.jpg) no-repeat;
+}
+
+.main .partner .hz-logo {
+  width: 1010px;
+  height: 216px;
+}
+
+.main .partner .hz-logo a {
+  display: inline-block;
+  width: 130px;
+  height: 58px;
+  border: 1px dashed #ccc;
+  margin: 0 12px 12px 0;
+}
+
+.main .friend {
+  width: 100%;
+  height: 168px;
+  margin-top: 30px;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+}
+
+.main .friend .friend-logo {
+  width: 100%;
+  height: 30px;
+  padding-bottom: 30px;
+}
+
+.main .friend .friend-logo h3 {
+  display: inline-block;
+  float: left;
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  background: url(../images/friendLink.jpg) no-repeat;
+}
+
+.main .friend .friend-logo > a {
+  float: right;
+  line-height: 30px;
+  display: inline-block;
+  color: #999;
+}
+
+.main .friend .friend-logo > a:hover {
+  color: #009af3;
+}
+
+.main .friend .friend-name {
+  width: 100%;
+  height: 88px;
+  padding-bottom: 20px;
+  font-size: 0;
+}
+
+.main .friend .friend-name > a {
+  display: inline-block;
+  width: 125px;
+  height: 24px;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 13px;
+}
+
+.main .friend .friend-name > a:hover {
+  color: #009af3;
+}
+
+/* 主体完成 */
