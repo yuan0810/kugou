@@ -444,6 +444,8 @@ a {
   /* 主体选项卡 */
   /* 主选项卡完成 */
   /* 广告条 */
+  /* MV列表开始 */
+  /* MV列表完成 */
 }
 
 .main .main-top {
@@ -1261,8 +1263,11 @@ a {
 }
 
 .main .hotradio .hotradio-right {
+  position: relative;
   float: right;
   width: 325px;
+  height: 355px;
+  font-size: 0;
 }
 
 .main .hotradio .hotradio-right .newsong {
@@ -1310,11 +1315,18 @@ a {
   font-size: 0;
 }
 
-.main .hotradio .hotradio-right .hotsinger .hotsinger-big {
+.main .hotradio .hotradio-right .hotsinger .sbig {
   float: left;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hbig {
+  float: right;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-big {
   position: relative;
   width: 160px;
-  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .main .hotradio .hotradio-right .hotsinger .hotsinger-big .singer {
@@ -1344,4 +1356,71 @@ a {
 
 .main .hotradio .hotradio-right .hotsinger .hotsinger-big.hotsinger-big:hover .mask {
   display: block;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hsmall {
+  margin: 0 5px;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-small {
+  position: relative;
+  float: left;
+  width: 105px;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-small .singer {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 95px;
+  height: 35px;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-small .singer p {
+  line-height: 35px;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-small .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105px;
+  height: 105px;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.main .hotradio .hotradio-right .hotsinger .hotsinger-small.hotsinger-small:hover .mask {
+  display: block;
+}
+
+.main .hotradio .hotradio-right .hotsinger-point {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  padding-top: 17px;
+  text-align: center;
+}
+
+.main .hotradio .hotradio-right .hotsinger-point > li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+}
+
+.main .hotradio .hotradio-right .hotsinger-point > li a {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url(../images/sprite.png) 0 -11px no-repeat;
+}
+
+.main .hotradio .hotradio-right .hotsinger-point > li a:hover {
+  background: url(../images/sprite.png) 0 0 no-repeat;
 }
