@@ -296,7 +296,6 @@
          width: 840px;
          height: 493px;
          margin-top: 10px;
-         background: red;
          z-index: 100;
          .content-left {
              float: left;
@@ -387,4 +386,293 @@
          }
      }
      /* 歌词部分完成 */
+     /* 控制条开始 */
+     .control {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 80px;
+         font-size: 0;
+         z-index: 1000;
+         .control-top {
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             width: 100%;
+             height: 80px;
+             background: #000;
+             opacity: 0.3;
+             box-shadow: 0 -10px 20px #403f3f;
+         }
+         .play-middle {
+             position: absolute;
+             top: 0;
+             left: 0;
+             bottom: 0;
+             right: 0;
+             width: 960px;
+             height: 80px;
+             margin: auto;
+             .play-control {
+                 display: inline-block;
+                 width: 160px;
+                 height: 80px;
+                 line-height: 80px;
+                 vertical-align: middle;
+                 .last {
+                     display: inline-block;
+                     width: 36px;
+                     height: 36px;
+                     vertical-align: middle;
+                     margin-left: -7px;
+                     background: url(../images/btn.png) 0 -143px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -36px -143px no-repeat;
+                     }
+                 }
+                 .play {
+                     display: inline-block;
+                     width: 60px;
+                     height: 60px;
+                     margin-left: 14px;
+                     margin-right: 14px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -60px 0 no-repeat;
+                     }
+                 }
+                 .next {
+                     display: inline-block;
+                     width: 36px;
+                     height: 36px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) -144px -143px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -180px -143px no-repeat;
+                     }
+                 }
+             }
+             .bar-image {
+                 display: inline-block;
+                 width: 60px;
+                 height: 60px;
+                 line-height: 80px;
+                 vertical-align: middle;
+                 margin-left: 30px;
+             }
+             .control-bar {
+                 display: inline-block;
+                 width: 370px;
+                 height: 80px;
+                 margin-left: 20px;
+                 line-height: 80px;
+                 vertical-align: middle;
+                 .song-info {
+                     width: 370px;
+                     height: 24px;
+                     padding-top: 18px;
+                     line-height: 24px;
+                     .like-song {
+                         float: left;
+                         width: 290px; // height: 24px;
+                         font-family: Microsoft Yahei, '\5b8b\4f53', Arial, Verdana;
+                         font-size: 13px;
+                         line-height: 24px;
+                         color: #c4c3c3;
+                     }
+                     .play-time {
+                         float: right;
+                         width: 77px;
+                         height: 24px;
+                         font-family: Tahoma, Arial, Verdana;
+                         font-size: 12px;
+                         color: #fff;
+                         opacity: 0.6;
+                     }
+                 }
+                 .bar {
+                     width: 370px;
+                     height: 5px;
+                     margin-top: 11px;
+                     .progress {
+                         position: relative;
+                         width: 370px;
+                         height: 3px;
+                         background: url(../images/progress_bg_middle.png) repeat-x top left;
+                         .line {
+                             width: 100px;
+                             height: 3px;
+                             background: url(../images/progress_bar_middle.png) repeat-x top left;
+                         }
+                         .ball {
+                             position: absolute;
+                             top: -4.5px;
+                             left: -6px;
+                             width: 12px;
+                             height: 12px;
+                             border-radius: 50%;
+                             background: url(../images/btn.png) -217px -181px no-repeat;
+                         }
+                     }
+                 }
+             }
+             .control-btn {
+                 display: inline-block;
+                 width: 260px;
+                 height: 80px;
+                 line-height: 80px;
+                 vertical-align: middle;
+                 margin-left: 50px;
+                 .voice {
+                     position: relative;
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     line-height: 80px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) 0 -195px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -16px -195px no-repeat;
+                     }
+                     .voice-control {
+                         position: absolute;
+                         top: -148px;
+                         left: -5px;
+                         width: 29px;
+                         height: 114px;
+                         background: url(../images/volume-panel.png) no-repeat;
+                         .voice-progress {
+                             position: absolute;
+                             top: 10px;
+                             left: 13px;
+                             width: 3px;
+                             height: 90px;
+                             .voice-line {
+                                 width: 3px;
+                                 height: 10px;
+                                 background: url(../images/volume_middle.png) repeat-y top left;
+                             }
+                             .voice-ball {
+                                 position: absolute;
+                                 bottom: -4.5px;
+                                 left: -3px;
+                                 width: 9px;
+                                 height: 9px;
+                                 background: url(../images/btn.png) -242px -130px no-repeat;
+                             }
+                         }
+                     }
+                 }
+                 .loop {
+                     position: relative;
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     margin-left: 30px;
+                     line-height: 80px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) -64px -179px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -80px -179px no-repeat;
+                     }
+                     .playloop {
+                         position: absolute;
+                         top: -148px;
+                         left: -5px;
+                         width: 100px;
+                         height: 95px;
+                         padding: 10px;
+                         background: url(../images/play_style.png) no-repeat left top;
+                         >a {
+                             display: block;
+                             width: 100px;
+                             height: 30px;
+                             font-size: 13px;
+                             line-height: 30px;
+                             border-bottom: 1px solid #30343d;
+                             color: #fff;
+                             >span {
+                                 display: inline-block;
+                                 width: 16px;
+                                 height: 16px;
+                                 margin: 7px 8px;
+                             }
+                             .listloop {
+                                 vertical-align: middle;
+                                 background: url(../images/btn.png) -64px -179px no-repeat;
+                                 &:hover {
+                                     background: url(../images/btn.png) -80px -179px no-repeat;
+                                 }
+                             }
+                             .oneloop {
+                                 vertical-align: middle;
+                                 background: url(../images/btn.png) 0 -179px no-repeat;
+                                 &:hover {
+                                     background: url(../images/btn.png) -16px -179px no-repeat;
+                                 }
+                             }
+                             .random {
+                                 vertical-align: middle;
+                                 background: url(../images/btn.png) -128px -179px no-repeat;
+                                 &:hover {
+                                     background: url(../images/btn.png) -144px -179px no-repeat;
+                                 }
+                             }
+                         }
+                     }
+                 }
+                 .download {
+                     display: inline-block;
+                     width: 15px;
+                     height: 15px;
+                     margin-left: 30px;
+                     line-height: 80px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) -240px -32px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -256px -32px no-repeat;
+                     }
+                 }
+                 .share {
+                     display: inline-block;
+                     width: 15px;
+                     height: 15px;
+                     margin-left: 30px;
+                     line-height: 80px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) -240px 0 no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -256px 0 no-repeat;
+                     }
+                 }
+                 .playlist {
+                     position: relative;
+                     display: inline-block;
+                     width: 60px;
+                     height: 23px;
+                     margin-left: 40px;
+                     line-height: 80px;
+                     vertical-align: middle;
+                     background: url(../images/btn.png) 0 -120px no-repeat;
+                     span {
+                         position: absolute;
+                         top: 0;
+                         left: 30px;
+                         display: inline-block;
+                         font-size: 13px;
+                         line-height: 23px;
+                         color: #fff; // vertical-align: middle;
+                     }
+                     &.playlist:hover {
+                         background: url(../images/btn.png) -60px -120px no-repeat;
+                         >span {
+                             color: #1987b2;
+                         }
+                     }
+                 }
+             }
+         }
+     }
  }
