@@ -1,0 +1,290 @@
+@charset "UTF-8";
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 头部开始 */
+.header {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  text-indent: -999;
+  margin-top: 20px;
+  margin-right: 40px;
+  width: 153px;
+  height: 37px;
+}
+
+.header .logo a {
+  display: block;
+}
+
+.header .search {
+  position: absolute;
+  top: 22px;
+  left: 195px;
+  width: 298px;
+  height: 34px;
+  border: 1px solid #ccc;
+  line-height: 34px;
+}
+
+.header .search input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 249px;
+  height: 24px;
+  line-height: 24px;
+  border: 0;
+  padding: 5px 0;
+  color: #666;
+  margin-left: 14px;
+}
+
+.header .search .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 34px;
+}
+
+.header .search .btn i {
+  display: block;
+  margin: 9px 0 0 9px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/search.png) -40px -56px no-repeat;
+}
+
+.header .search .btn i:hover {
+  background: url(../images/search.png) -40px -86px no-repeat;
+}
+
+.header .header-right {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 402px;
+  height: 25px;
+}
+
+.header .header-right .list {
+  width: 250px;
+  height: 19.5px;
+  border-right: 1px solid #e6e6e6;
+  padding-right: 11px;
+}
+
+.header .header-right .list li {
+  float: left;
+  width: 82px;
+  text-align: center;
+  line-height: 19.5px;
+}
+
+.header .header-right .list li a {
+  color: #777;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+}
+
+.header .header-right .list li a:hover {
+  color: #009af3;
+}
+
+.header .header-right .login-reg {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+  width: 110px;
+  height: 30px;
+}
+
+.header .header-right .login-reg a {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 28px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.header .header-right .login-reg .login {
+  border: 1px solid #169af3;
+  background-color: #169af3;
+  color: #fff;
+}
+
+.header .header-right .login-reg .login:hover {
+  background-color: #158fe1;
+  border: 1px solid #158fe1;
+}
+
+.header .header-right .login-reg .reg {
+  border: 1px solid #dbdbdb;
+  color: #777;
+  margin-left: 10px;
+}
+
+.header .header-right .login-reg .reg:hover {
+  border: 1px solid #009af3;
+  color: #009af3;
+}
+
+/* 头部结束 */
+.nav {
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.nav .nav-nav {
+  width: 1000px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.nav .nav-nav .nav-left {
+  float: left;
+}
+
+.nav .nav-nav .nav-left > li {
+  float: left;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+  line-height: 55px;
+}
+
+.nav .nav-nav .nav-left > li > a {
+  display: block;
+  padding: 0 30px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.nav .nav-nav .nav-left > li > a:hover {
+  background-color: #0c8ed9;
+  color: #fff;
+}
+
+.nav .nav-nav .nav-left > li .more {
+  padding: 0 40px;
+  background: url(../images/arrowMored.png) 80px 25px no-repeat;
+}
+
+.nav .nav-nav .nav-left > li .more:hover {
+  background: url(../images/arrowMoreu.png) 80px 25px no-repeat;
+  background-color: #0c8ed9;
+  color: fff;
+}
+
+.nav .nav-nav .nav-left > li .nav-slide {
+  z-index: 999;
+  background-color: #2c323b;
+  display: none;
+}
+
+.nav .nav-nav .nav-left > li .nav-slide > li {
+  line-height: 34px;
+}
+
+.nav .nav-nav .nav-left > li .nav-slide > li > a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.nav .nav-nav .nav-left > li .nav-slide > li > a:hover {
+  border-top: 1px solid #383d44;
+  background-color: #2d343d;
+}
+
+.nav .nav-nav .nav-left > li.li-more:hover {
+  position: relative;
+}
+
+.nav .nav-nav .nav-left > li.li-more:hover .nav-slide {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+
+.nav .nav-nav .nav-right {
+  float: right;
+}
+
+.nav .nav-nav .nav-right li {
+  float: left;
+  font: 13px/1.5 微软雅黑, simsun, sans-serif;
+  margin-left: 30px;
+  line-height: 55px;
+}
+
+.nav .nav-nav .nav-right li a {
+  padding-left: 20px;
+  color: #bbb;
+}
+
+.nav .nav-nav .nav-right .nav-one {
+  background: url(../images/sprite.png) 0px -119px no-repeat;
+}
+
+.nav .nav-nav .nav-right .nav-one:hover {
+  background: url(../images/sprite.png) 0px -101px no-repeat;
+  color: #14a9ff;
+}
+
+.nav .nav-nav .nav-right .nav-two {
+  background: url(../images/sprite.png) 0px -155px no-repeat;
+}
+
+.nav .nav-nav .nav-right .nav-two:hover {
+  background: url(../images/sprite.png) 0px -137px no-repeat;
+  color: #14a9ff;
+}
+
+.nav .nav-nav .nav-right .nav-three {
+  background: url(../images/sprite.png) 0px -191px no-repeat;
+}
+
+.nav .nav-nav .nav-right .nav-three:hover {
+  background: url(../images/sprite.png) 0px -173px no-repeat;
+  color: #14a9ff;
+}
+
+.nav .nav-nav .nav-right .nav-four {
+  background: url(../images/sprite.png) 0px -226px no-repeat;
+}
+
+.nav .nav-nav .nav-right .nav-four:hover {
+  background: url(../images/sprite.png) 0px -208px no-repeat;
+  color: #14a9ff;
+}
+
+.nav .nav-nav .nav-right .nav-five {
+  background: url(../images/sprite.png) 0px -281px no-repeat;
+}
+
+.nav .nav-nav .nav-right .nav-five:hover {
+  background: url(../images/sprite.png) 0px -245px no-repeat;
+  color: #14a9ff;
+}
+
+/* 导航栏结束 */
+/* 主体部分开始 */
+/* 主体部分结束 */
