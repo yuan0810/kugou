@@ -1,261 +1,667 @@
-@mixin font {
-    font: 13px/1.5 微软雅黑, simsun, sans-serif;
-}
+ @mixin font {
+     font: 13px/1.5 微软雅黑, simsun, sans-serif;
+ }
 
-#container {
-    width: 100%;
-    margin: 0 auto;
-}
+ #container {
+     width: 100%;
+     margin: 0 auto;
+ }
 
-a {
-    text-decoration: none;
-}
+ a {
+     text-decoration: none;
+ }
+ /* 头部开始 */
 
+ .header {
+     position: relative;
+     overflow: hidden;
+     width: 1000px;
+     height: 78px;
+     margin: 0 auto;
+     .logo {
+         text-indent: -999;
+         margin-top: 20px;
+         margin-right: 40px;
+         width: 153px;
+         height: 37px;
+         a {
+             display: block;
+         }
+     }
+     .search {
+         position: absolute;
+         top: 22px;
+         left: 195px;
+         width: 298px;
+         height: 34px;
+         border: 1px solid #ccc;
+         line-height: 34px;
+         input {
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 249px;
+             height: 24px;
+             line-height: 24px;
+             border: 0;
+             padding: 5px 0;
+             color: #666;
+             margin-left: 14px;
+         }
+         .btn {
+             position: absolute;
+             top: 0;
+             right: 0;
+             width: 34px;
+             height: 34px;
+             i {
+                 display: block;
+                 margin: 9px 0 0 9px;
+                 width: 16px;
+                 height: 16px;
+                 background: url(../images/search.png) -40px -56px no-repeat;
+                 &:hover {
+                     background: url(../images/search.png) -40px -86px no-repeat;
+                 }
+             }
+         }
+     }
+     .header-right {
+         position: absolute;
+         top: 30px;
+         right: 0;
+         width: 402px;
+         height: 25px;
+         .list {
+             width: 250px;
+             height: 19.5px;
+             border-right: 1px solid #e6e6e6;
+             padding-right: 11px;
+             li {
+                 float: left;
+                 width: 82px;
+                 text-align: center;
+                 line-height: 19.5px;
+                 a {
+                     color: #777;
+                     @include font;
+                     &:hover {
+                         color: #009af3;
+                     }
+                 }
+             }
+         }
+         .login-reg {
+             position: absolute;
+             right: 0;
+             top: -5px;
+             @include font;
+             width: 110px;
+             height: 30px;
+             a {
+                 display: block;
+                 float: left;
+                 width: 48px;
+                 height: 28px;
+                 border-radius: 2px;
+                 text-align: center;
+                 line-height: 28px;
+             }
+             .login {
+                 border: 1px solid #169af3;
+                 background-color: #169af3;
+                 color: #fff;
+                 &:hover {
+                     background-color: #158fe1;
+                     border: 1px solid #158fe1;
+                 }
+             }
+             .reg {
+                 border: 1px solid #dbdbdb;
+                 color: #777;
+                 margin-left: 10px;
+                 &:hover {
+                     border: 1px solid #009af3;
+                     color: #009af3;
+                 }
+             }
+         }
+     }
+ }
+ /* 头部结束 */
+ /* 导航栏开始 */
 
+ .nav {
+     width: 100%;
+     height: 55px;
+     background-color: #2c323b;
+     .nav-nav {
+         width: 1000px;
+         height: 55px;
+         margin: 0 auto;
+         .nav-left {
+             float: left;
+             >li {
+                 float: left;
+                 @include font;
+                 line-height: 55px;
+                 >a {
+                     display: block;
+                     padding: 0 30px;
+                     font-size: 16px;
+                     color: #ddd;
+                     &:hover {
+                         background-color: #0c8ed9;
+                         color: #fff;
+                     }
+                 }
+                 .more {
+                     padding: 0 40px;
+                     background: url(../images/arrowMored.png) 80px 25px no-repeat;
+                     &:hover {
+                         background: url(../images/arrowMoreu.png) 80px 25px no-repeat;
+                         background-color: #0c8ed9;
+                         color: fff;
+                     }
+                 }
+                 .nav-slide {
+                     z-index: 999;
+                     background-color: #2c323b;
+                     display: none;
+                     >li {
+                         line-height: 34px;
+                         >a {
+                             display: block;
+                             text-align: center;
+                             font-size: 16px;
+                             color: #ddd;
+                             &:hover {
+                                 border-top: 1px solid #383d44;
+                                 background-color: #2d343d;
+                             }
+                         }
+                     }
+                 }
+                 &.li-more:hover {
+                     position: relative;
+                     .nav-slide {
+                         position: absolute;
+                         top: 55px;
+                         left: 0;
+                         width: 100%;
+                         display: block;
+                     }
+                 }
+             }
+         }
+         .nav-right {
+             float: right;
+             li {
+                 float: left;
+                 @include font;
+                 margin-left: 30px;
+                 line-height: 55px;
+                 a {
+                     padding-left: 20px;
+                     color: #bbb;
+                 }
+             }
+             .nav-one {
+                 background: url(../images/sprite.png) 0px -119px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -101px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-two {
+                 background: url(../images/sprite.png) 0px -155px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -137px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-three {
+                 background: url(../images/sprite.png) 0px -191px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -173px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-four {
+                 background: url(../images/sprite.png) 0px -226px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -208px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-five {
+                 background: url(../images/sprite.png) 0px -281px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -245px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+         }
+     }
+ }
+ /* 导航栏结束 */
+ /* 主体部分开始*/
 
+ .main {
+     width: 100%;
+     height: 1458px;
+     margin: 40px auto;
+     @include font;
+     .mainmiddle {
+         width: 1000px;
+         height: 100%;
+         padding: 0 3px 0 20px;
+         margin: 0 auto;
+         font-size: 0;
+         .listleft {
+             float: left;
+             width: 218px;
+             border-bottom: 1px solid #eee;
+             border-left: 1px solid #eee;
+             border-right: 1px solid #eee;
+             .rise {
+                 h3 {
+                     width: 218px;
+                     height: 45px;
+                     border-top: 1px solid #eee;
+                     >a {
+                         position: relative;
+                         display: inline-block;
+                         width: 203px;
+                         height: 45px;
+                         padding-left: 15px;
+                         font-size: 16px;
+                         line-height: 45px;
+                         color: #555;
+                         >i {
+                             position: absolute;
+                             top: 20px;
+                             right: 10px;
+                             display: inline-block;
+                             width: 9px;
+                             height: 5px;
+                             background: url(../images/icon_splice.png) -450px -120px no-repeat;
+                             &:hover {
+                                 background: url(../images/icon_splice.png) -450px -60px no-repeat;
+                             }
+                         }
+                     }
+                 }
+                 .listlist {
+                     width: 218px;
+                     line-height: 36px;
+                     a {
+                         display: block;
+                         width: 203px;
+                         height: 36px;
+                         font-size: 14px;
+                         padding-left: 15px;
+                         margin-bottom: 4px;
+                         color: #555;
+                         &:hover {
+                             background-color: #f5f8fb;
+                             color: #169af3;
+                         }
+                         span {
+                             display: inline-block;
+                             line-height: 36px;
+                             vertical-align: middle;
+                             width: 16px;
+                             height: 16px;
+                             margin-right: 5px;
+                         }
+                         .biaoshengbang {
+                             background: url(../images/20130807185439172736.png) no-repeat;
+                         }
+                         .TOP {
+                             background: url(../images/20130807185450567609.png) no-repeat;
+                         }
+                         .redsong {
+                             background: url(../images/wlhg.png) no-repeat;
+                         }
+                         .hotsong {
+                             background: url(../images/20160119110054378246.jpg) no-repeat;
+                         }
+                         .newsong {
+                             background: url(../images/20130807184914908217.png) no-repeat;
+                         }
+                         .oumei {
+                             background: url(../images/20151222142404906327.png) no-repeat;
+                         }
+                         .han {
+                             background: url(../images/20160412184815439777.png) no-repeat;
+                         }
+                         .japan {
+                             background: url(../images/20151008190401233496.png) no-repeat;
+                         }
+                         .xiha {
+                             background: url(../images/20170724173441128163.jpg) no-repeat;
+                         }
+                         .xingesheng {
+                             background: url(../images/20170714104330591520.jpg) no-repeat;
+                         }
+                         .yuanchuang {
+                             background: url(../images/20160912141731629726.png) no-repeat;
+                         }
+                         .yue {
+                             background: url(../images/20140730093845344657.png) no-repeat;
+                         }
+                         .share {
+                             background: url(../images/20131025103853305845.png) no-repeat;
+                         }
+                         .fivesing {
+                             background: url(../images/20160504171514518791.png) no-repeat;
+                         }
+                         .fanxing {
+                             background: url(../images/20140109170934390969.png) no-repeat;
+                         }
+                         .school {
+                             background: url(../images/20160530183222163172.png) no-repeat;
+                         }
+                         .CDJ {
+                             background: url(../images/20151222142859452169.png) no-repeat;
+                         }
+                         .shenqu {
+                             background: url(../images/20160108180453655920.png) no-repeat;
+                         }
+                         .BDJ {
+                             background: url(../images/20151222143059932587.png) no-repeat;
+                         }
+                         .net {
+                             background: url(../images/20160805174132122112.png) no-repeat;
+                         }
+                         .car {
+                             background: url(../images/20151222142931437919.png) no-repeat;
+                         }
+                         .KTV {
+                             background: url(../images/20151222142813590494.png) no-repeat;
+                         }
+                         .yingshi {
+                             background: url(../images/20151222143034989298.png) no-repeat;
+                         }
+                         .chun {
+                             background: url(../images/20160728182722980092.png) no-repeat;
+                         }
+                         .MBB {
+                             background: url(../images/20130807192258314669.png) no-repeat;
+                         }
+                         .EDB {
+                             background: url(../images/20161013180833243081.png) no-repeat;
+                         }
+                         .RGB {
+                             background: url(../images/20151222142442217161.png) no-repeat;
+                         }
+                         .HMB {
+                             background: url(../images/20130807193303334739.png) no-repeat;
+                         }
+                         .CTB {
+                             background: url(../images/20140827151250799981.png) no-repeat;
+                         }
+                     }
+                 }
+             }
+         }
+         .listright {
+             float: right;
+             margin-top: 15px;
+             width: 750px;
+             height: 1443px;
+             font-size: 0;
+             .BSBtitle {
+                 width: 750px;
+                 height: 57px;
+                 font-size: 0;
+                 margin-bottom: 24px;
+                 border-bottom: 1px dotted #cacaca;
+                 color: #333;
+                 h3 {
+                     display: inline-block;
+                     font-size: 24px;
+                     width: 120px;
+                     height: 24px;
+                     line-height: 24px;
+                     margin-right: 20px;
+                 }
+                 >span {
+                     display: inline-block;
+                     color: #999;
+                     font-size: 14px;
+                 }
+                 >a {
+                     float: right;
+                     width: 112px;
+                     height: 34px;
+                     margin-top: -6px;
+                     line-height: 34px;
+                     vertical-align: middle;
+                     background-color: #169af3;
+                     color: #fff;
+                     border-radius: 2px;
+                     text-align: center;
+                     font-size: 14px;
+                     &:hover {
+                         background-color: #158fe1;
+                     }
 
-/* 头部开始 */
+                     i {
+                         display: inline-block;
+                         width: 9px;
+                         height: 16px;
+                         margin-right: 3px;
+                         vertical-align: middle;
+                         background: url(../images/play_icon.png) no-repeat;
+                     }
+                 }
+             }
+             .all {
+                 width: 750px;
+                 height: 21px;
+                 padding-bottom: 10px;
+                 font-size: 14px;
+                 line-height: 14px;
+                 vertical-align: middle;
+                 color: #999;
+                 >span {
+                     display: inline-block;
+                     height: 14px;
+                     padding-left: 14px;
+                     margin: 0 10px;
+                     line-height: 14px;
+                     vertical-align: middle;
+                     background: url(../images/icon_splice.png?20150814) -180px -180px no-repeat
+                 }
+             }
+             .songlist {
+                 width: 750px;
+                 height: 1210px;
+                 >li {
+                     width: 730px;
+                     height: 54px;
+                     padding: 0 10px;
+                     border-bottom: 1px solid #f2f2f2;
+                     &:hover {
+                         background-color: #f5f8fb;
+                         .songname {
+                             color: #009af3;
+                         }
+                         .time {
+                             color: #009af3;
+                         }
+                         .btn {
+                             display: block;
+                         }
+                     }
+                     .radio {
+                         display: inline-block;
+                         height: 14px;
+                         padding-left: 14px;
+                         margin-right: 10px;
+                         background: url(../images/icon_splice.png?20150814) -180px -180px no-repeat
+                     }
+                     .num {
+                         display: inline-block;
+                         width: 15px;
+                         height: 54px;
+                         line-height: 54px;
+                         margin-right: 10px;
+                         font-size: 14px;
+                         color: #999;
+                         strong {
+                             color: #fe2c62;
+                             font-size: 18px;
+                             vertical-align: middle;
+                             font-family: Tahoma;
+                         }
+                     }
+                     i {
+                         display: inline-block;
+                         height: 9px;
+                         padding-left: 17px;
+                         margin-right: 10px;
+                         background: url(../images/icon_splice.png?20150814) -240px -240px no-repeat
+                     }
+                     .songname {
+                         display: inline-block;
+                         height: 54px;
+                         margin-right: 10px;
+                         line-height: 54px;
+                         font-size: 14px;
+                         color: #333;
+                     }
+                     .btn {
+                         float: right;
+                         display: inline-block;
+                         height: 54px;
+                         line-height: 54px;
+                         display: none;
+                         .play {
+                             display: inline-block;
+                             padding-left: 12px;
+                             height: 14px;
+                             vertical-align: middle;
+                             background: url(../images/icon_splice.png) no-repeat;
+                             &:hover {
+                                 background: url(../images/icon_splice.png) 0 -30px no-repeat;
+                             }
+                         }
+                         .down {
+                             display: inline-block;
+                             padding-left: 16px;
+                             height: 13px;
+                             margin-left: 10px;
+                             margin-right: 10px;
+                             vertical-align: middle;
+                             background: url(../images/icon_splice.png) -90px 0 no-repeat;
+                             &:hover {
+                                 background: url(../images/icon_splice.png) -90px -30px no-repeat;
+                             }
+                         }
+                         .share {
+                             display: inline-block;
+                             padding-left: 16px;
+                             height: 14px;
+                             vertical-align: middle;
+                             background: url(../images/icon_splice.png) -298px 0 no-repeat;
+                             &:hover {
+                                 background: url(../images/icon_splice.png) -298px -30px no-repeat;
+                             }
+                         }
+                     }
+                     .time {
+                         float: right;
+                         display: inline-block;
+                         height: 54px;
+                         color: #999;
+                         font-size: 14px;
+                         margin-left: 20px;
+                         line-height: 54px;
+                     }
+                 }
+             }
+             .more {
+                 width: 750px;
+                 height: 120px;
+                 font-size: 16px;
+                 color: #666;
+                 text-align: center;
+                 line-height: 120px;
+                 a {
+                     display: inline-block;
+                     width: 108px;
+                     height: 36px;
+                     margin-left: 20px;
+                     background-color: #169af3;
+                     color: #fff;
+                     border-radius: 3px;
+                     line-height: 36px;
+                     &:hover {
+                         background-color: #158fe1;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ /* 主体部分完成 */
+ /* 脚部开始 */
 
-.header {
-    position: relative;
-    overflow: hidden;
-    width: 1000px;
-    height: 78px;
-    margin: 0 auto;
-    .logo {
-        text-indent: -999;
-        margin-top: 20px;
-        margin-right: 40px;
-        width: 153px;
-        height: 37px;
-        a {
-            display: block;
-        }
-    }
-    .search {
-        position: absolute;
-        top: 22px;
-        left: 195px;
-        width: 298px;
-        height: 34px;
-        border: 1px solid #ccc;
-        line-height: 34px;
-        input {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 249px;
-            height: 24px;
-            line-height: 24px;
-            border: 0;
-            padding: 5px 0;
-            color: #666;
-            margin-left: 14px;
-        }
-        .btn {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 34px;
-            height: 34px;
-            i {
-                display: block;
-                margin: 9px 0 0 9px;
-                width: 16px;
-                height: 16px;
-                background: url(../images/search.png) -40px -56px no-repeat;
-                &:hover {
-                    background: url(../images/search.png) -40px -86px no-repeat;
-                }
-            }
-        }
-    }
-    .header-right {
-        position: absolute;
-        top: 30px;
-        right: 0;
-        width: 402px;
-        height: 25px;
-        .list {
-            width: 250px;
-            height: 19.5px;
-            border-right: 1px solid #e6e6e6;
-            padding-right: 11px;
-            li {
-                float: left;
-                width: 82px;
-                text-align: center;
-                line-height: 19.5px;
-                a {
-                    color: #777;
-                    @include font;
-                    &:hover {
-                        color: #009af3;
-                    }
-                }
-            }
-        }
-        .login-reg {
-            position: absolute;
-            right: 0;
-            top: -5px;
-            @include font;
-            width: 110px;
-            height: 30px;
-            a {
-                display: block;
-                float: left;
-                width: 48px;
-                height: 28px;
-                border-radius: 2px;
-                text-align: center;
-                line-height: 28px;
-            }
-            .login {
-                border: 1px solid #169af3;
-                background-color: #169af3;
-                color: #fff;
-                &:hover {
-                    background-color: #158fe1;
-                    border: 1px solid #158fe1;
-                }
-            }
-            .reg {
-                border: 1px solid #dbdbdb;
-                color: #777;
-                margin-left: 10px;
-                &:hover {
-                    border: 1px solid #009af3;
-                    color: #009af3;
-                }
-            }
-        }
-    }
-}
-
-
-
-/* 头部结束 */
-
-.nav {
-    width: 100%;
-    height: 55px;
-    background-color: #2c323b;
-    .nav-nav {
-        width: 1000px;
-        height: 55px;
-        margin: 0 auto;
-        .nav-left {
-            float: left;
-            >li {
-                float: left;
-                @include font;
-                line-height: 55px;
-                >a {
-                    display: block;
-                    padding: 0 30px;
-                    font-size: 16px;
-                    color: #ddd;
-                    &:hover {
-                        background-color: #0c8ed9;
-                        color: #fff;
-                    }
-                }
-                .more {
-                    padding: 0 40px;
-                    background: url(../images/arrowMored.png) 80px 25px no-repeat;
-                    &:hover {
-                        background: url(../images/arrowMoreu.png) 80px 25px no-repeat;
-                        background-color: #0c8ed9;
-                        color: fff;
-                    }
-                }
-                .nav-slide {
-                    z-index: 999;
-                    background-color: #2c323b;
-                    display: none;
-                    >li {
-                        line-height: 34px;
-                        >a {
-                            display: block;
-                            text-align: center;
-                            font-size: 16px;
-                            color: #ddd;
-                            &:hover {
-                                border-top: 1px solid #383d44;
-                                background-color: #2d343d;
-                            }
-                        }
-                    }
-                }
-                &.li-more:hover {
-                    position: relative;
-                    .nav-slide {
-                        position: absolute;
-                        top: 55px;
-                        left: 0;
-                        width: 100%;
-                        display: block;
-                    }
-                }
-            }
-        }
-        .nav-right {
-            float: right;
-            li {
-                float: left;
-                @include font;
-                margin-left: 30px;
-                line-height: 55px;
-                a {
-                    padding-left: 20px;
-                    color: #bbb;
-                }
-            }
-            .nav-one {
-                background: url(../images/sprite.png) 0px -119px no-repeat;
-                &:hover {
-                    background: url(../images/sprite.png) 0px -101px no-repeat;
-                    color: #14a9ff;
-                }
-            }
-            .nav-two {
-                background: url(../images/sprite.png) 0px -155px no-repeat;
-                &:hover {
-                    background: url(../images/sprite.png) 0px -137px no-repeat;
-                    color: #14a9ff;
-                }
-            }
-            .nav-three {
-                background: url(../images/sprite.png) 0px -191px no-repeat;
-                &:hover {
-                    background: url(../images/sprite.png) 0px -173px no-repeat;
-                    color: #14a9ff;
-                }
-            }
-            .nav-four {
-                background: url(../images/sprite.png) 0px -226px no-repeat;
-                &:hover {
-                    background: url(../images/sprite.png) 0px -208px no-repeat;
-                    color: #14a9ff;
-                }
-            }
-            .nav-five {
-                background: url(../images/sprite.png) 0px -281px no-repeat;
-                &:hover {
-                    background: url(../images/sprite.png) 0px -245px no-repeat;
-                    color: #14a9ff;
-                }
-            }
-        }
-    }
-}
-
-
-/* 导航栏结束 */
-
-
-/* 主体部分开始 */
-
-
-/* 主体部分结束 */
+ .footer {
+     width: 100%;
+     height: 239px;
+     margin-top: 20px;
+     padding-bottom: 50px;
+     @include font;
+     background-color: #2c323b;
+     text-align: center;
+     color: #b1b3b9;
+     .link {
+         width: 100%;
+         height: 18px;
+         padding: 15px 0;
+         border-bottom: 1px solid #3d424a;
+         ;
+         >a {
+             font-size: 13px;
+             padding: 10px;
+             color: #b1b3b9;
+             &:hover {
+                 color: #009af3;
+             }
+         }
+     }
+     .copyright {
+         width: 100%;
+         height: 150px;
+         margin-top: 40px;
+         p {
+             line-height: 30px;
+             .icp {
+                 color: #999;
+                 margin-left: 10px;
+             }
+             .footer-icon {
+                 display: inline-block;
+                 width: 16px;
+                 height: 16px;
+                 margin-left: 2px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 background: url(../images/footer_icon.png) no-repeat;
+             }
+             .business {
+                 display: inline-block;
+                 width: 20px;
+                 height: 28px;
+                 background: url(../images/logo_down.png) no-repeat;
+                 vertical-align: middle;
+                 background-size: 20px 20px;
+                 margin-left: 2px;
+             }
+         }
+     }
+ }
