@@ -1,0 +1,481 @@
+ @mixin font {
+     font: 13px/1.5 微软雅黑, simsun, sans-serif;
+ }
+
+ #container {
+     position: relative;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ .dingbu {
+     position: fixed;
+     top: 60%;
+     right: 100px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+ /* 广告 */
+
+ .poster {
+     width: 100%;
+     height: 79px;
+     >a {
+         display: block;
+         height: 100%;
+         height: 79px;
+         background: url(../images/topbanner.jpg) center center;
+     }
+ }
+
+ .header {
+     width: 100%;
+     height: 40px;
+     .middle {
+         width: 960px;
+         height: 40px;
+         margin: 0 auto;
+         @include font;
+         font-size: 0;
+         background: url(../images/header_bg.jpg) no-repeat;
+         >ul {
+             float: right;
+             color: #0c85cc;
+             font-size: 0; // font-size: 16px;
+             li {
+                 float: left;
+                 width: 42px;
+                 height: 40px;
+                 line-height: 40px;
+                 text-align: center;
+                 .person {
+                     display: inline-block;
+                     width: 14px;
+                     height: 16px;
+                     vertical-align: middle;
+                     background: url(../images/header_bg.png) 0 -335px no-repeat;
+                 }
+                 .cart {
+                     position: relative;
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     vertical-align: middle;
+                     background: url(../images/header_bg.png) 0 -310px no-repeat;
+                     i {
+                         position: absolute;
+                         top: -10px;
+                         left: 15px;
+                         display: inline-block;
+                         width: 17px;
+                         height: 17px;
+                         font: 12px/1.5 宋体, Arial, Verdana;
+                         color: #fff;
+                         background: url(../images/ico.png) no-repeat
+                     }
+                 }
+             }
+             .line {
+                 display: inline-block;
+                 width: 1px;
+                 height: 40px;
+                 background: url(../images/line.png) center center no-repeat;
+             }
+         }
+     }
+ }
+ /* 导航栏 */
+
+ .nav {
+     width: 100%;
+     height: 60px;
+     background: #008ad4;
+     font-size: 0;
+     .middle {
+         width: 960px;
+         height: 60px;
+         margin: 0 auto;
+         @include font;
+         >img {
+             float: left;
+             margin-top: 10px;
+             margin-right: 10px;
+         }
+         .nav-left {
+             float: left;
+             width: 376px;
+             height: 60px;
+             li {
+                 float: left;
+                 height: 60px;
+                 line-height: 60px;
+                 a {
+                     display: inline-block;
+                     font-size: 16px;
+                     color: #fff;
+                     padding: 0 11px;
+                 }
+             }
+         }
+         .nav-right {
+             float: right;
+             li {
+                 float: left;
+                 height: 60px;
+                 line-height: 60px;
+                 a {
+                     display: inline-block;
+                     font-size: 16px;
+                     color: #fff;
+                     padding: 0 11px;
+                 }
+             }
+         }
+     }
+ }
+ /* 导航栏完成 */
+ /* 购买流程 */
+
+ .buy-step {
+     width: 960px;
+     height: 45px;
+     font-size: 0;
+     @include font;
+     margin: 50px auto 60px;
+     background: url(../images/ico.png) 0px -150px no-repeat;
+     span {
+         display: inline-block;
+         width: 315px;
+         height: 45px;
+         color: #666;
+         line-height: 45px;
+         text-align: center;
+         font-size: 20px;
+     }
+     .cart {
+         color: #fff;
+     }
+ }
+
+ .gcart {
+     width: 960px;
+     height: 33px;
+     margin: 0 auto;
+     line-height: 33px;
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #333;
+     font-weight: bold;
+ }
+ /* 购物车列表 */
+
+ .cartlist {
+     width: 958px;
+     height: 441px;
+     margin: 0 auto;
+     @include font;
+     font-size: 0;
+     border: 1px solid #dadada;
+     table {
+         // display: block;
+         color: #333;
+         font-size: 12px;
+         thead {
+             width: 100%;
+             height: 40px;
+             background: #f3f3f3;
+             th {
+                 line-height: 40px;
+                 text-align: center;
+                 color: #999;
+             }
+         }
+         tbody {
+             width: 100%;
+             height: 401px;
+             .tr {
+                 width: 100%;
+                 height: 200px;
+                 color: #333;
+                 font-size: 12px;
+                 border-bottom: 1px dotted #bebebe;
+                 td {
+                     padding: 20px 0;
+                     .img {
+                         float: left;
+                         display: inline-block;
+                         width: 158px;
+                         height: 158px;
+                         border: 1px solid #dadada;
+                         margin: auto 25px auto 30px;
+                     }
+                     .dec {
+                         float: left;
+                         display: inline-block;
+                         width: 200px;
+                         height: 90px;
+                         color: #333;
+                         line-height: 30px;
+                     }
+                 }
+                 .money {
+                     vertical-align: middle;
+                     text-align: center;
+                 }
+                 .num {
+                     font-size: 0;
+                     vertical-align: middle;
+                     >a {
+                         float: left;
+                         display: inline-block;
+                         width: 38px;
+                         height: 38px;
+                         border: 1px solid #dadada;
+                     }
+                     .jian {
+
+                         background: url(../images/ico.png) -380px -104px no-repeat;
+                     }
+                     .jia {
+
+                         background: url(../images/ico.png) -417px -104px no-repeat;
+                     }
+                     input {
+                         float: left;
+                         width: 64px;
+                         height: 36px;
+                         border: 0;
+                         border-top: 1px solid #dadada;
+                         border-bottom: 1px solid #dadada;
+                         font-size: 18px;
+                         line-height: 36px;
+                         text-align: center;
+                         font-weight: bold;
+                     }
+                 }
+                 .price {
+                     vertical-align: middle;
+                     text-align: center;
+                     color: #ff6600;
+                 }
+                 .delete {
+                     vertical-align: middle;
+                     position: relative;
+                     .del {
+                         position: absolute;
+                         top: 0;
+                         right: 25px;
+                         bottom: 0;
+                         margin: auto;
+                         display: inline-block;
+                         width: 38px;
+                         height: 38px;
+                         background: url(../images/ico.png) no-repeat -524px -104px;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ /* 总价 */
+
+ .total {
+     width: 960px;
+     height: 122px;
+     margin: 0 auto;
+     text-align: right;
+     line-height: 122px;
+     vertical-align: middle;
+     @include font;
+     font-size: 18px;
+     color: #666;
+     >span {
+         display: line-block;
+         height: 64px;
+         font-size: 48px;
+         color: #ff6600;
+         line-height: 122px; // font-family: Microsoft Yahei, '\5b8b\4f53', Arial, Verdana;
+         vertical-align: middle;
+     }
+ }
+ /* 购买流程完成 */
+ /* 结算 */
+
+ .jiesuan {
+     width: 960px;
+     height: 80px;
+     margin: 0 auto;
+     margin-bottom: 60px;
+     background-color: #f3f3f3;
+     a {
+         float: right;
+         display: inline-block;
+         width: 197px;
+         height: 43px;
+         @include font;
+         font-size: 22px;
+         margin-top: 20px;
+         margin-right: 20px;
+         text-align: center;
+         line-height: 43px;
+     }
+     .shop {
+         color: #999;
+         background: url(../images/ico.png) -1754px -61px no-repeat;
+     }
+     .settle {
+         color: #fff;
+         background: url(../images/ico.png) -2148px -61px no-repeat;
+     }
+ }
+
+ .list {
+     width: 100%;
+     height: 150px;
+     padding: 25px 0;
+     margin-top: 30px;
+     font-size: 0;
+     background-color: #f5f5f5;
+     >div {
+         width: 960px;
+         height: 110px;
+         margin: 0 auto;
+         padding-top: 25px;
+         dl {
+             float: left;
+         }
+         @include font;
+         dt {
+             width: 195px;
+             height: 22px;
+             font-size: 16px;
+             line-height: 22px;
+             padding-bottom: 15px;
+             font-size: 16px;
+         }
+         dd {
+             width: 195px;
+             height: 24px;
+             font-size: 12px;
+             line-height: 24px;
+             a {
+                 color: #666;
+             }
+         }
+         dl:nth-child(4) {
+             dt {
+                 width: 145px;
+             }
+             dd {
+                 width: 145px;
+             }
+         }
+         >div {
+             display: inline-block;
+             float: right;
+             width: 189px;
+             height: 100px;
+             padding-left: 40px;
+             border-left: 1px solid #dfdfdf;
+             p {
+                 height: 20px;
+                 line-height: 20px;
+                 color: #666;
+                 text-align: center;
+             }
+             p:nth-child(2) {
+                 margin-bottom: 10px;
+             }
+             >div {
+                 width: 189px;
+                 height: 30px;
+                 text-align: center;
+                 >a {
+                     display: inline-block;
+                     width: 56px;
+                     height: 19px;
+                     padding: 5px 10px;
+                     background-color: #008ad4;
+                     color: #fff;
+                     font-size: 14px;
+                     border-radius: 5px;
+                     margin-top: -5px;
+                 }
+             }
+         }
+     }
+ }
+ /* 脚部 */
+
+ .footer {
+     width: 100%;
+     height: 163px;
+     padding: 15px 0 55px 0;
+     margin-top: 10px;
+     @include font;
+     color: #b1b3b9;
+     >div {
+         position: relative;
+         width: 960px;
+         height: 148px;
+         margin: 0 auto;
+     }
+     .link {
+         width: 100%;
+         height: 17px;
+         padding: 15px 0;
+         border-top: 1px solid #c2c2c2;
+         ;
+         >a {
+             font-size: 12px;
+             padding: 0 3px;
+             color: #666;
+             &:hover {
+                 color: #009af3;
+             }
+         }
+     }
+     .copyright {
+         width: 100%;
+         height: 100px;
+         p {
+             line-height: 25px;
+             color: #999;
+             .icp {
+                 color: #999;
+                 margin-left: 10px;
+                 &:hover {
+                     color: #666;
+                 }
+             }
+             .footer-icon {
+                 display: inline-block;
+                 width: 16px;
+                 height: 16px;
+                 margin-left: 2px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 background: url(../images/footer_icon.png) no-repeat;
+             }
+             .business {
+                 display: inline-block;
+                 width: 20px;
+                 height: 27px;
+                 background: url(../images/logo_down.png) no-repeat;
+                 vertical-align: middle;
+                 background-size: 20px 20px;
+                 margin-left: 2px;
+             }
+         }
+     }
+     .kugoulogo {
+         position: absolute;
+         right: 0;
+         top: 60px;
+         width: 148px;
+         height: 35px;
+         background: url(../images/ikugou2.png) no-repeat;
+     }
+ }
