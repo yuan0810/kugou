@@ -1,0 +1,585 @@
+ @mixin font {
+     font: 13px/1.5 微软雅黑, simsun, sans-serif;
+ }
+
+ #container {
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ a {
+     text-decoration: none;
+ }
+ /* 头部开始 */
+
+ .header {
+     position: relative;
+     overflow: hidden;
+     width: 1000px;
+     height: 78px;
+     margin: 0 auto;
+     .logo {
+         text-indent: -999;
+         margin-top: 20px;
+         margin-right: 40px;
+         width: 153px;
+         height: 37px;
+         a {
+             display: block;
+         }
+     }
+     .search {
+         position: absolute;
+         top: 22px;
+         left: 195px;
+         width: 298px;
+         height: 34px;
+         border: 1px solid #ccc;
+         line-height: 34px;
+         input {
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 249px;
+             height: 24px;
+             line-height: 24px;
+             border: 0;
+             padding: 5px 0;
+             color: #666;
+             margin-left: 14px;
+         }
+         .btn {
+             position: absolute;
+             top: 0;
+             right: 0;
+             width: 34px;
+             height: 34px;
+             i {
+                 display: block;
+                 margin: 9px 0 0 9px;
+                 width: 16px;
+                 height: 16px;
+                 background: url(../images/search.png) -40px -56px no-repeat;
+                 &:hover {
+                     background: url(../images/search.png) -40px -86px no-repeat;
+                 }
+             }
+         }
+     }
+     .header-right {
+         position: absolute;
+         top: 30px;
+         right: 0;
+         width: 402px;
+         height: 25px;
+         .list {
+             width: 250px;
+             height: 19.5px;
+             border-right: 1px solid #e6e6e6;
+             padding-right: 11px;
+             li {
+                 float: left;
+                 width: 82px;
+                 text-align: center;
+                 line-height: 19.5px;
+                 a {
+                     color: #777;
+                     @include font;
+                     &:hover {
+                         color: #009af3;
+                     }
+                 }
+             }
+         }
+         .login-reg {
+             position: absolute;
+             right: 0;
+             top: -5px;
+             @include font;
+             width: 110px;
+             height: 30px;
+             a {
+                 display: block;
+                 float: left;
+                 width: 48px;
+                 height: 28px;
+                 border-radius: 2px;
+                 text-align: center;
+                 line-height: 28px;
+             }
+             .login {
+                 border: 1px solid #169af3;
+                 background-color: #169af3;
+                 color: #fff;
+                 &:hover {
+                     background-color: #158fe1;
+                     border: 1px solid #158fe1;
+                 }
+             }
+             .reg {
+                 border: 1px solid #dbdbdb;
+                 color: #777;
+                 margin-left: 10px;
+                 &:hover {
+                     border: 1px solid #009af3;
+                     color: #009af3;
+                 }
+             }
+         }
+     }
+ }
+ /* 头部结束 */
+ /* 导航栏开始 */
+
+ .nav {
+     width: 100%;
+     height: 55px;
+     background-color: #2c323b;
+     .nav-nav {
+         width: 1000px;
+         height: 55px;
+         margin: 0 auto;
+         .nav-left {
+             float: left;
+             >li {
+                 float: left;
+                 @include font;
+                 line-height: 55px;
+                 >a {
+                     display: block;
+                     padding: 0 30px;
+                     font-size: 16px;
+                     color: #ddd;
+                     &:hover {
+                         background-color: #0c8ed9;
+                         color: #fff;
+                     }
+                 }
+                 .more {
+                     padding: 0 40px;
+                     background: url(../images/arrowMored.png) 80px 25px no-repeat;
+                     &:hover {
+                         background: url(../images/arrowMoreu.png) 80px 25px no-repeat;
+                         background-color: #0c8ed9;
+                         color: fff;
+                     }
+                 }
+                 .nav-slide {
+                     z-index: 999;
+                     background-color: #2c323b;
+                     display: none;
+                     >li {
+                         line-height: 34px;
+                         >a {
+                             display: block;
+                             text-align: center;
+                             font-size: 16px;
+                             color: #ddd;
+                             &:hover {
+                                 border-top: 1px solid #383d44;
+                                 background-color: #2d343d;
+                             }
+                         }
+                     }
+                 }
+                 &.li-more:hover {
+                     position: relative;
+                     .nav-slide {
+                         position: absolute;
+                         top: 55px;
+                         left: 0;
+                         width: 100%;
+                         display: block;
+                     }
+                 }
+             }
+         }
+         .nav-right {
+             float: right;
+             li {
+                 float: left;
+                 @include font;
+                 margin-left: 30px;
+                 line-height: 55px;
+                 a {
+                     padding-left: 20px;
+                     color: #bbb;
+                 }
+             }
+             .nav-one {
+                 background: url(../images/sprite.png) 0px -119px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -101px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-two {
+                 background: url(../images/sprite.png) 0px -155px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -137px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-three {
+                 background: url(../images/sprite.png) 0px -191px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -173px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-four {
+                 background: url(../images/sprite.png) 0px -226px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -208px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+             .nav-five {
+                 background: url(../images/sprite.png) 0px -281px no-repeat;
+                 &:hover {
+                     background: url(../images/sprite.png) 0px -245px no-repeat;
+                     color: #14a9ff;
+                 }
+             }
+         }
+     }
+ }
+ /* 导航栏结束 */
+ /* 视频播放 */
+
+ .playvideo {
+     width: 1000px;
+     margin: 0 auto;
+     margin-top: 18px;
+     @include font;
+     font-size: 0;
+     h2 {
+         width: 1000px;
+         height: 27px;
+         line-height: 27px;
+         font-size: 12px;
+         color: #878787;
+         font-weight: bold;
+         >a {
+             color: #878787;
+             font-weight: normal;
+         }
+         span {
+             font-weight: normal;
+         }
+     }
+     .Video {
+         position: relative;
+         width: 1000px;
+         height: 494px;
+         background-color: #000;
+         >video {
+             width: 100%;
+             height: 100%;
+         }
+         .controls {
+             position: absolute;
+             left: 0;
+             bottom: 0;
+             width: 100%;
+             height: 36px;
+             background-color: #000;
+             border-top: 1px solid #363636;
+             line-height: 36px;
+             vertical-align: middle;
+             .bofang {
+                 position: absolute;
+                 top: 5px;
+                 left: 3px;
+                 width: 26px;
+                 height: 26px;
+                 border-radius: 50%;
+                 .icon-iconfontbofang {
+                     line-height: 26px;
+                     font-size: 28px;
+                     color: #fff;
+                 }
+             }
+             .progress {
+                 position: absolute;
+                 top: 17px;
+                 left: 43px;
+                 width: 770px;
+                 height: 2px;
+                 background-color: #919191;
+                 .line {
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     width: 100px;
+                     height: 2px;
+                     background-color: #fff;
+                 }
+                 .rage {
+                     position: absolute;
+                     top: -3px;
+                     left: -2px;
+                     width: 4px;
+                     height: 8px;
+                     background-color: #fff;
+                 }
+             }
+             .time {
+                 position: absolute;
+                 top: 0;
+                 left: 823px;
+                 width: 75px;
+                 line-height: 36px;
+                 font-size: 12px;
+                 >div {
+                     display: inline-block;
+                     color: #fff;
+                 }
+             }
+             .ctro {
+                 position: absolute;
+                 top: 0;
+                 left: 900px;
+                 width: 30px;
+                 height: 36px;
+                 color: #fff;
+                 font-size: 12px;
+             }
+             .kongzhi {
+                 position: absolute;
+                 top: 5px;
+                 right: 0;
+                 color: #fff;
+                 height: 26px;
+                 border-left: 1px dashed #363636;
+                 >div {
+                     display: inline-block;
+                     width: 26px;
+                     height: 26px;
+                     z-index: 999;
+                 }
+                 .iconfont {
+                     font-size: 14px;
+                     margin-right: 5px;
+                     margin-left: 5px;
+                     line-height: 26px;
+                     color: #fff;
+                 }
+                 div:nth-child(1) {
+                     position: relative;
+                     margin-left: 5px;
+                     .yinlinag {
+                         position: absolute;
+                         top: -153px;
+                         left: -1px;
+                         width: 26px;
+                         height: 180px;
+                         background-color: rgba(37, 41, 44, .8);
+                         z-index: -1;
+                         .progress {
+                             position: absolute;
+                             left: 7px;
+                             top: 10px;
+                             width: 4px;
+                             height: 130px;
+                             background-color: #000;
+
+                             .line1 {
+                                 position: absolute;
+                                 bottom: 0;
+                                 left: -4px;
+                                 width: 4px;
+                                 height: 10px;
+                                 background-color: #fff;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+ .songname {
+     position: relative;
+     width: 960px;
+     height: 38px;
+     padding: 15px 20px;
+     margin: 0 auto;
+     @include font;
+     font-size: 0;
+     background-color: #25292c;
+     .left {
+         position: absolute;
+         top: 15px;
+         left: 20px;
+         width: 760px;
+         line-height: 38px;
+         font-size: 12px;
+         color: #fff;
+     }
+     .right {
+         position: absolute;
+         top: 15px;
+         right: 20px;
+         font-size: 14px;
+         color: #666;
+         line-height: 38px;
+         vertical-align: middle;
+
+         a:nth-child(1) {
+             display: inline-block;
+             width: 45px;
+             height: 20px;
+             margin-left: 20px;
+             padding-left: 20px;
+             line-height: 20px;
+             vertical-align: middle;
+             font-size: 14px;
+             color: #666;
+             background: url(../images/icon_mv_phone.png) no-repeat;
+             &:hover {
+                 color: #FF6600;
+             }
+         }
+         a:nth-child(2) {
+             display: inline-block;
+             width: 18px;
+             height: 20px;
+             line-height: 20px;
+             vertical-align: middle;
+             margin-left: 20px;
+             background: url(../images/icon_mv_share_btn.png) no-repeat;
+             &:hover {
+                 background: url(../images/icon_mv_share_hover.png) no-repeat;
+             }
+         }
+         a:nth-child(3) {
+             display: inline-block;
+             width: 19px;
+             height: 20px;
+             line-height: 20px;
+             vertical-align: middle;
+             margin-left: 20px;
+             background: url(../images/icon_mv_download.png) no-repeat;
+             &:hover {
+                 background: url(../images/icon_mv_download_hover.png) no-repeat;
+             }
+         }
+     }
+ }
+
+ .like {
+     width: 1000px;
+     height: 159px;
+     margin: 0 auto;
+     margin-top: 10px;
+     font-size: 0;
+     @include font;
+     >h2 {
+         width: 990px;
+         height: 27px;
+         padding-left: 10px;
+         color: #878787;
+         font-size: 14px;
+         line-height: 27px;
+         font-weight: bold;
+     }
+     >div {
+         width: 1000px;
+         height: 120px;
+         margin-top: 12px;
+         >div {
+             float: left;
+             position: relative;
+             width: 140px;
+             height: 110px;
+             margin-right: 32px;
+             img {
+                 width: 140px;
+                 height: 78px;
+             }
+             >div {
+                 position: absolute;
+                 top: 45px;
+                 right: 12px;
+                 width: 22px;
+                 height: 22px;
+                 background: url(../images/play_icon.png) no-repeat;
+             }
+             >span {
+                 display: block;
+                 width: 120px;
+                 height: 20px;
+                 margin-top: 5px;
+                 margin-left: 3px;
+                 line-height: 20px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 color: #555;
+                 font-size: 14px;
+             }
+         }
+         div:nth-child(6) {
+             margin-right: 0;
+         }
+     }
+ }
+ /* 脚部开始 */
+
+ .footer {
+     width: 100%;
+     height: 239px;
+     margin-top: 20px;
+     padding-bottom: 50px;
+     @include font;
+     background-color: #2c323b;
+     text-align: center;
+     color: #b1b3b9;
+     .link {
+         width: 100%;
+         height: 18px;
+         padding: 15px 0;
+         border-bottom: 1px solid #3d424a;
+         ;
+         >a {
+             font-size: 13px;
+             padding: 10px;
+             color: #b1b3b9;
+             &:hover {
+                 color: #009af3;
+             }
+         }
+     }
+     .copyright {
+         width: 100%;
+         height: 150px;
+         margin-top: 40px;
+         p {
+             line-height: 30px;
+             .icp {
+                 color: #999;
+                 margin-left: 10px;
+             }
+             .footer-icon {
+                 display: inline-block;
+                 width: 16px;
+                 height: 16px;
+                 margin-left: 2px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 background: url(../images/footer_icon.png) no-repeat;
+             }
+             .business {
+                 display: inline-block;
+                 width: 20px;
+                 height: 28px;
+                 background: url(../images/logo_down.png) no-repeat;
+                 vertical-align: middle;
+                 background-size: 20px 20px;
+                 margin-left: 2px;
+             }
+         }
+     }
+ }
