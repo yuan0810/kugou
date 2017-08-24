@@ -322,6 +322,14 @@ a {
   color: #666;
 }
 
+.total .p1 {
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: middle;
+  font-size: 48px;
+  color: #ff6600;
+}
+
 .total > span {
   display: line-block;
   height: 64px;
