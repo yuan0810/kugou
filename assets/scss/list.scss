@@ -286,10 +286,20 @@
                              width: 9px;
                              height: 5px;
                              background: url(../images/icon_splice.png) -450px -120px no-repeat;
+
                              &:hover {
                                  background: url(../images/icon_splice.png) -450px -60px no-repeat;
                              }
                          }
+                     }
+                 }
+
+                 .active {
+
+                     background: url(../images/icon_splice.png) -480px -120px no-repeat;
+                     &:hover {
+
+                         background: url(../images/icon_splice.png) -480px -60px no-repeat;
                      }
                  }
                  .listlist {

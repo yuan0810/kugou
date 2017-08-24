@@ -1,5 +1,6 @@
-$(function(){
-	$('.title').click(function(){
-		console.log(111);
-	})
+$(function() {
+    $('.clicka').click(function() {
+        $(this).parent().siblings().slideToggle();
+        $(this).children().toggleClass('active');
+    })
 })

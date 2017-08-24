@@ -342,6 +342,14 @@ a {
   background: url(../images/icon_splice.png) -450px -60px no-repeat;
 }
 
+.main .mainmiddle .listleft .rise .active {
+  background: url(../images/icon_splice.png) -480px -120px no-repeat;
+}
+
+.main .mainmiddle .listleft .rise .active:hover {
+  background: url(../images/icon_splice.png) -480px -60px no-repeat;
+}
+
 .main .mainmiddle .listleft .rise .listlist {
   width: 218px;
   line-height: 36px;
