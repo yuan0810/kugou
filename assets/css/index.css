@@ -1,6 +1,8 @@
 @charset "UTF-8";
 #container {
+  position: relative;
   width: 100%;
+  height: 3011px;
   margin: 0 auto;
 }
 
@@ -370,9 +372,13 @@ a {
   position: absolute;
   top: 355px;
   left: 560px;
+  z-index: 999;
+  /*  .active {
+             background: url(../images/sprite.png) 0 -37px no-repeat;
+         } */
 }
 
-.slideshow .slideshow-point li {
+.slideshow .slideshow-point .point {
   float: left;
   margin: 0 7px;
   width: 12px;
@@ -386,6 +392,7 @@ a {
   width: 100%;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
   font: 13px/1.5 微软雅黑, simsun, sans-serif;
 }
 
@@ -829,6 +836,14 @@ a {
   height: 375px;
 }
 
+.main .option .option-left .active {
+  color: #009af3;
+}
+
+.main .option .option-left .hide {
+  display: none;
+}
+
 .main .option .option-left .newsong {
   width: 100%;
   height: 30px;
@@ -845,19 +860,15 @@ a {
   background: url(../images/newlist.jpg) no-repeat;
 }
 
-.main .option .option-left .newsong > ul {
+.main .option .option-left .newsong .newlist {
   float: left;
 }
 
-.main .option .option-left .newsong > ul li {
+.main .option .option-left .newsong .newlist li {
   display: inline-block;
   font-size: 14px;
   margin-right: 20px;
   line-height: 30px;
-}
-
-.main .option .option-left .newsong > ul li:hover {
-  color: #009af3;
 }
 
 .main .option .option-left .newsong .newbtn {
@@ -1194,6 +1205,7 @@ a {
 }
 
 .main .hotradio {
+  position: relative;
   width: 100%;
   height: 355px;
   margin-top: 40px;
@@ -1290,9 +1302,10 @@ a {
 }
 
 .main .hotradio .hotradio-right {
-  position: relative;
-  float: right;
-  width: 325px;
+  position: absolute;
+  top: 0;
+  left: 680px;
+  width: 350px;
   height: 355px;
   font-size: 0;
 }
@@ -1300,45 +1313,52 @@ a {
 .main .hotradio .hotradio-right .newsong {
   width: 100%;
   height: 30px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .main .hotradio .hotradio-right .newsong .newlogo {
   float: left;
   width: 120px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 15px;
   background: url(../images/hotsinger.jpg) no-repeat;
 }
 
-.main .hotradio .hotradio-right .newsong .more {
-  float: right;
-  line-height: 30px;
-  color: #999;
-}
-
-.main .hotradio .hotradio-right .newsong .more:hover {
+.main .hotradio .hotradio-right .newsong .active2 {
   color: #009af3;
 }
 
-.main .hotradio .hotradio-right .newsong > ul {
-  float: left;
+.main .hotradio .hotradio-right .newsong .newlist1 {
+  float: right;
+  width: 210px;
 }
 
-.main .hotradio .hotradio-right .newsong > ul li {
+.main .hotradio .hotradio-right .newsong .newlist1 li {
   display: inline-block;
   font-size: 14px;
   margin-right: 20px;
   line-height: 30px;
 }
 
-.main .hotradio .hotradio-right .newsong > ul li:hover {
+.main .hotradio .hotradio-right .newsong .newlist1 .more {
+  color: #999;
+  margin-right: 0;
+}
+
+.main .hotradio .hotradio-right .newsong .newlist1 .more:hover {
   color: #009af3;
 }
 
 .main .hotradio .hotradio-right .hotsinger {
-  width: 100%;
+  display: none;
+}
+
+.main .hotradio .hotradio-right .hotsinger-one {
+  display: block;
+}
+
+.main .hotradio .hotradio-right .hotsinger {
+  width: 325px;
   font-size: 0;
 }
 
@@ -1441,15 +1461,15 @@ a {
   margin: 0 8px;
 }
 
+.main .hotradio .hotradio-right .hotsinger-point > li .active3 {
+  background: url(../images/sprite.png) 0 0 no-repeat;
+}
+
 .main .hotradio .hotradio-right .hotsinger-point > li a {
   width: 6px;
   height: 6px;
   display: inline-block;
   background: url(../images/sprite.png) 0 -11px no-repeat;
-}
-
-.main .hotradio .hotradio-right .hotsinger-point > li a:hover {
-  background: url(../images/sprite.png) 0 0 no-repeat;
 }
 
 .main .partner {
@@ -1596,4 +1616,23 @@ a {
   vertical-align: middle;
   background-size: 20px 20px;
   margin-left: 2px;
+}
+
+.huidaodingbu {
+  position: fixed;
+  right: 70px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/scrollTop1.png) left top no-repeat;
+  border-radius: 4px;
+  line-height: 50px;
+}
+
+.huidaodingbu:hover {
+  background: url(../images/scrollTop2.png) left top no-repeat;
+}
+
+.ding {
+  display: none;
 }

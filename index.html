@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_387406_qubwidq89mnuq5mi.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/swiper/css/swiper.min.css">
 </head>
 
 <body>
@@ -67,28 +68,28 @@
         </div>
         <!-- 导航栏结束 -->
         <!-- 轮播图开始 -->
-        <div class="slideshow">
-            <ul>
-                <li class="slideshow-one"></li>
-                <li class="slideshow-two"></li>
-                <li class="slideshow-three"></li>
-                <li class="slideshow-four"></li>
-                <li class="slideshow-five"></li>
-                <li class="slideshow-six"></li>
-                <li class="slideshow-seven"></li>
+        <div class="slideshow  swiper-container">
+            <ul class=" swiper-wrapper">
+                <li class="slideshow-one swiper-slide"></li>
+                <li class="slideshow-two swiper-slide"></li>
+                <li class="slideshow-three swiper-slide"></li>
+                <li class="slideshow-four swiper-slide"></li>
+                <li class="slideshow-five swiper-slide"></li>
+                <li class="slideshow-six swiper-slide"></li>
+                <li class="slideshow-seven swiper-slide"></li>
             </ul>
             <!-- 按钮 -->
-            <div class="slideshow-left-btn"></div>
-            <div class="slideshow-right-btn"></div>
+            <div class="slideshow-left-btn swiper-button-prev"></div>
+            <div class="slideshow-right-btn swiper-button-next"></div>
             <!-- 小点 -->
-            <ol class="slideshow-point">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ol class="slideshow-point swiper-pagination">
+                <!--  <li class="point active"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+                <li class="point"></li> -->
             </ol>
             <div class="down">
                 <a href="" class="pc">下载PC端</a>
@@ -247,10 +248,10 @@
                     <div class="newsong">
                         <h3 class="newlogo"></h3>
                         <ul class="newlist">
-                            <li>华语</li>
-                            <li>欧美</li>
-                            <li>韩国</li>
-                            <li>日本</li>
+                            <li data-index="0" class="active">华语</li>
+                            <li data-index="1">欧美</li>
+                            <li data-index="2">韩国</li>
+                            <li data-index="3">日本</li>
                         </ul>
                         <div class="newbtn">
                             <span></span>
@@ -329,6 +330,208 @@
                                     <span class="playsong"></span>
                                     <span class="songdown"></span>
                                     <span class="songtime">03:45</span>
+                                 </a>
+                            </li>
+                        </ul>
+                        <ul class="hide">
+                            <li>
+                                <a href="">
+                                    <span class="songname">Justin Bieber、BloodPop® - Friends </span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:09</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Miley Cyrus - Younger Now</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:09</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Rachel Platten - Broken Glass</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">02:59</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Thirty Seconds to Mars - Walk On Water</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:08</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Chris Brown - Questions</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">02:09</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Echosmith - Future Me</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:26</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Bastille - Basket Case</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">02:33</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Evanescence - Bring Me to Life (Synthesis)</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:18</span>
+                                 </a>
+                            </li>
+                        </ul>
+                        <ul class="hide">
+                            <li>
+                                <a href="">
+                                    <span class="songname">PRISTIN - WE LIKE</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">>03:17</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">NCT DREAM - We Young</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:44</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">泰欥 - 最简单的事 (가장 쉬운 일)【死而复生的男人 OST】</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:13</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">VICTON - UNBELIEVABLE (말도 안돼)</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:17</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">SUNMI - Gashina (가시나)</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:00</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">>MOMOLAND - Freeze (꼼짝마)</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">>03:12</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">DIA - Can t Stop (E905) (듣고싶어)</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:40</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">LOCO、GRAY - Summer Go Loco</span>
+                                    <span class="dujia"></span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:12</span>
+                                 </a>
+                            </li>
+                        </ul>
+                        <ul class="hide">
+                            <li>
+                                <a href="">
+                                    <span class="songname">凛として時雨 - DIE meets HARD</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:07</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Flower - たいようの哀悼歌【将国之天鹰星 ED】</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:05</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">GARNiDELiA - Désir【Fate/Apocrypha ED】</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:45</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">南條愛乃 - メロディアス・ムーンライト</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:04</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">初音ミク - 神无月</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:28</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">X21 - 現実から逃げるから現実がツラいんだ</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">04:28</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">ぐるたみん - Wake Up</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:53</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="songname">Pile - 絆Hero【魔法梦魇 TM】</span>
+                                    <span class="playsong"></span>
+                                    <span class="songdown"></span>
+                                    <span class="songtime">03:51</span>
                                  </a>
                             </li>
                         </ul>
@@ -502,54 +705,486 @@
                 <div class="hotradio-right">
                     <div class="newsong">
                         <h3 class="newlogo"></h3>
-                        <ul class="newlist">
-                            <li>华语</li>
+                        <ul class="newlist1">
+                            <li class="active2">华语</li>
                             <li>欧美</li>
                             <li>日韩</li>
+                            <li class="more">更多</li>
                         </ul>
-                        <p class="more">更多</p>
+                        <!-- <p class="more">更多</p> -->
                     </div>
-                    <div class="hotsinger">
-                        <div class="hotsinger-big sbig">
-                            <a href="">
+                    <div>
+                        <div class="hotsinger hotsinger-one">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
                                  <img src="assets/images/20170713161536456.jpg" width="160px" height="160px">
                             </a>
-                            <div class="singer">
-                                <p>薛之谦</p>
+                                <div class="singer">
+                                    <p>薛之谦</p>
+                                </div>
+                                <div class="mask"></div>
                             </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="hotsinger-big hbig">
-                            <a href="">
+                            <div class="hotsinger-big hbig">
+                                <a href="">
                                  <img src="assets/images/20170810103307128.jpg" width="160px" height="160px">
                              </a>
-                            <div class="singer">TFBOYS</div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="hotsinger-small">
-                            <a href="">
+                                <div class="singer">TFBOYS</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
                                  <img src="assets/images/20170810103307128.jpg" width="105" height="105">
                              </a>
-                            <div class="singer">鹿晗</div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="hotsinger-small hsmall">
-                            <a href="">
+                                <div class="singer">鹿晗</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
                                  <img src="assets/images/20170810163234456.jpg" width="105" height="105">
                              </a>
-                            <div class="singer">毛不易</div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="hotsinger-small">
-                            <a href="">
+                                <div class="singer">毛不易</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
                                  <img src="assets/images/20170119105146606.jpg" width="105" height="105">
                              </a>
-                            <div class="singer">周杰伦</div>
-                            <div class="mask"></div>
+                                <div class="singer">周杰伦</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170727130249963.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>SING女团</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20170807145802238.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">陈奕迅</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170111104600449.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">张杰</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20161209164303152140.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">林俊杰</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20140527095042283066.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">张学友</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20140218175057634765.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>刘德华</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20170807150656946.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">庄心妍</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20160418100508296.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">郑源</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20140520101227819989.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">刀郎</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20161206150644553.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">G.E.M.邓紫棋</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170316182005449.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>Alan Walker</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20161109155400970766.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Justin Bieber</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20140219154202584035.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Taylor Swift</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20140829170016192331.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">LINKIN PARK</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170316183028992.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Maroon 5</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170426152155521.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>Avril Lavigne</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20170808152643231.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Lady Gaga</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170316184254744.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Adele</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20140326104935637064.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">NONONO</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20140403171832528255.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Westlife</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170808155240486.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>Rihanna</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20161109160818377591.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Bruno Mars</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20140901103545412614.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Backstreet Boys</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20170517142348192.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Eminem</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20161012162713655.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Fall Out Boy</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170704172442730.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>BIGBANG</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20161219112538266.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">EXO</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20161229183012269.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">G-DRAGON</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20160418100501854.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">少女时代</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170210131911377.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">防弹少年团(...</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20160429120225741.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>PSY</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20170718150505886.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">BLACKPINK</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170719151934207.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">泫雅</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20170517142348192.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">IU</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170613194547222.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">T-ara</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20160905104458149.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>July</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20170725183659205.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Apink</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20121012112705930.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Trouble Maker</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20170314164240234.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">J.Fla</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20160516144648737671.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">AOA</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20170405105017399985.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>迪玛希</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20160328181557338549.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Mike.D.Angelo</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20130531162619140.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Crazy Frog</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20140515111045784578.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">HKT</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20130723153236137384.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Bie</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20160918161409173.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>李海娜</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20150714141909764174.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Ten</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20130809193411315158.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">琼英·卓玛</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20150716101612406088.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">般禅梵唱妙音组</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20170713173303947.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Rich Chigga</div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <div class="hotsinger">
+                            <div class="hotsinger-big sbig">
+                                <a href="">
+                                 <img src="assets/images/20130531163207542.jpg" width="160px" height="160px">
+                            </a>
+                                <div class="singer">
+                                    <p>Arash</p>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-big hbig">
+                                <a href="">
+                                 <img src="assets/images/20161117145023270.jpg" width="160px" height="160px">
+                             </a>
+                                <div class="singer">Sara Nusara Poongprasert</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20140515115522422462.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">Tata Young</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small hsmall">
+                                <a href="">
+                                 <img src="assets/images/20150716083533220890.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">新疆美丽公主组合</div>
+                                <div class="mask"></div>
+                            </div>
+                            <div class="hotsinger-small">
+                                <a href="">
+                                 <img src="assets/images/20150715212456933533.jpg" width="105" height="105">
+                             </a>
+                                <div class="singer">如是我闻</div>
+                                <div class="mask"></div>
+                            </div>
                         </div>
                     </div>
                     <ol class="hotsinger-point">
-                        <li><a href=""></a></li>
+                        <li><a href="" class="active3"></a></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                     </ol>
@@ -673,9 +1308,15 @@
                 </p>
             </div>
         </div>
+        <a href="#dingbu">
+			<div class="huidaodingbu ding">
+				
+			</div>
+		</a>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
 </body>
 
 </html>

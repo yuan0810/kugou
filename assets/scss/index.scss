@@ -2,8 +2,10 @@
      font: 13px/1.5 微软雅黑, simsun, sans-serif;
  }
 
-#container {
+ #container {
+     position: relative;
      width: 100%;
+     height: 3011px;
      margin: 0 auto;
  }
 
@@ -256,6 +258,7 @@
          width: 100%;
          height: 445px;
      }
+
      .slideshow-one {
          background: url(../images/20160713154957678313.jpg) top center;
      }
@@ -315,13 +318,17 @@
          position: absolute;
          top: 355px;
          left: 560px;
-         li {
+         z-index: 999;
+         .point {
              float: left;
              margin: 0 7px;
              width: 12px;
              height: 10px;
              background: url(../images/sprite.png) 0 -22px no-repeat;
          }
+         /*  .active {
+             background: url(../images/sprite.png) 0 -37px no-repeat;
+         } */
      }
      .down {
          position: absolute;
@@ -329,6 +336,7 @@
          width: 100%;
          height: 60px;
          background-color: rgba(0, 0, 0, .3);
+         z-index: 9999;
          @include font;
          a {
              display: block;
@@ -716,6 +724,12 @@
              float: left;
              width: 650px;
              height: 375px;
+             .active {
+                 color: #009af3;
+             }
+             .hide {
+                 display: none;
+             }
              .newsong {
                  width: 100%;
                  height: 30px;
@@ -729,16 +743,13 @@
                      margin-right: 25px;
                      background: url(../images/newlist.jpg) no-repeat;
                  }
-                 >ul {
+                 .newlist {
                      float: left;
                      li {
                          display: inline-block;
                          font-size: 14px;
                          margin-right: 20px;
                          line-height: 30px;
-                         &:hover {
-                             color: #009af3;
-                         }
                      }
                  }
                  .newbtn {
@@ -780,6 +791,7 @@
                      }
                  }
              }
+
              .playlist {
                  width: 100%;
                  height: 280px;
@@ -1027,6 +1039,7 @@
      }
      /* MV列表开始 */
      .hotradio {
+         position: relative;
          width: 100%;
          height: 355px;
          margin-top: 40px;
@@ -1111,38 +1124,38 @@
              }
          }
          .hotradio-right {
-             position: relative;
-             float: right;
-             width: 325px;
+             position: absolute;
+             top: 0;
+             left: 680px;
+             width: 350px;
              height: 355px;
              font-size: 0;
              .newsong {
                  width: 100%;
                  height: 30px;
-                 padding-bottom: 20px;
-                 margin-bottom: 10px;
+                 padding-bottom: 30px;
                  .newlogo {
                      float: left;
                      width: 120px;
                      height: 30px;
-                     margin-right: 20px;
+                     margin-right: 15px;
                      background: url(../images/hotsinger.jpg) no-repeat;
                  }
-                 .more {
-                     float: right;
-                     line-height: 30px;
-                     color: #999;
-                     &:hover {
-                         color: #009af3;
-                     }
+                 .active2 {
+                     color: #009af3;
                  }
-                 >ul {
-                     float: left;
+                 .newlist1 {
+                     float: right;
+                     width: 210px;
                      li {
                          display: inline-block;
                          font-size: 14px;
                          margin-right: 20px;
                          line-height: 30px;
+                     }
+                     .more {
+                         color: #999;
+                         margin-right: 0;
                          &:hover {
                              color: #009af3;
                          }
@@ -1150,7 +1163,13 @@
                  }
              }
              .hotsinger {
-                 width: 100%;
+                 display: none;
+             }
+             .hotsinger-one {
+                 display: block;
+             }
+             .hotsinger {
+                 width: 325px;
                  font-size: 0;
                  .sbig {
                      float: left;
@@ -1241,15 +1260,14 @@
                      width: 6px;
                      height: 6px;
                      margin: 0 8px;
+                     .active3 {
+                         background: url(../images/sprite.png) 0 0 no-repeat;
+                     }
                      a {
                          width: 6px;
                          height: 6px;
                          display: inline-block;
                          background: url(../images/sprite.png) 0 -11px no-repeat;
-                         &:hover {
-
-                             background: url(../images/sprite.png) 0 0 no-repeat;
-                         }
                      }
                  }
              }
@@ -1387,4 +1405,23 @@
              }
          }
      }
+ }
+
+ .huidaodingbu {
+     position: fixed;
+     right: 70px;
+     bottom: 50px;
+     width: 50px;
+     height: 50px;
+     background: url(../images/scrollTop1.png) left top no-repeat; //background:red;
+     border-radius: 4px;
+     line-height: 50px;
+     &:hover {
+
+         background: url(../images/scrollTop2.png) left top no-repeat; //background:red;
+     }
+ }
+
+ .ding {
+     display: none;
  }
