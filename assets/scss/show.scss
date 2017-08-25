@@ -265,7 +265,7 @@
          z-index: 10;
          opacity: 0.6;
          background-color: rgba(0, 0, 0, .35);
-         background-image: url(../images/20160426113238585.jpg); // background-color: rgba(0, 0, 0, .35);
+         background-image: url(../images/20150715184807521489.jpg); // background-color: rgba(0, 0, 0, .35);
      }
      .print {
          background-size: cover;
@@ -443,6 +443,18 @@
                          background: url(../images/btn.png) -60px 0 no-repeat;
                      }
                  }
+                 .active {
+                     display: inline-block;
+                     width: 60px;
+                     height: 60px;
+                     margin-left: 14px;
+                     margin-right: 14px;
+                     vertical-align: middle; // background: url(../images/btn.png) no-repeat;
+                     background: url(../images/btn.png) 0 -60px no-repeat;
+                     &:hover {
+                         background: url(../images/btn.png) -60px -60px no-repeat;
+                     }
+                 }
                  .next {
                      display: inline-block;
                      width: 36px;
@@ -502,7 +514,7 @@
                          height: 3px;
                          background: url(../images/progress_bg_middle.png) repeat-x top left;
                          .line {
-                             width: 100px;
+                             width: 0;
                              height: 3px;
                              background: url(../images/progress_bar_middle.png) repeat-x top left;
                          }
@@ -518,6 +530,7 @@
                      }
                  }
              }
+
              .control-btn {
                  display: inline-block;
                  width: 260px;
@@ -525,6 +538,7 @@
                  line-height: 80px;
                  vertical-align: middle;
                  margin-left: 50px;
+
                  .voice {
                      position: relative;
                      display: inline-block;
@@ -532,17 +546,26 @@
                      height: 16px;
                      line-height: 80px;
                      vertical-align: middle;
-                     background: url(../images/btn.png) 0 -195px no-repeat;
-                     &:hover {
-                         background: url(../images/btn.png) -16px -195px no-repeat;
+                     z-index: 9;
+
+
+                     .ylj {
+                         width: 16px;
+                         height: 16px;
+                         z-index: 2;
                      }
-                     .voice-control {
+                     .Progress {
                          position: absolute;
-                         top: -148px;
+                         bottom: 5px;
                          left: -5px;
                          width: 29px;
+                         height: 160px;
+                         display: none;
+                     }
+                     .voice-control {
+                         width: 29px;
                          height: 114px;
-                         background: url(../images/volume-panel.png) no-repeat;
+                         background: url(../images/volume-panel.png) no-repeat; // display: none;
                          .voice-progress {
                              position: absolute;
                              top: 10px;
@@ -550,13 +573,16 @@
                              width: 3px;
                              height: 90px;
                              .voice-line {
+                                 position: absolute;
+                                 left: 0;
+                                 bottom: 0;
                                  width: 3px;
-                                 height: 10px;
+                                 height: 100%;
                                  background: url(../images/volume_middle.png) repeat-y top left;
                              }
                              .voice-ball {
                                  position: absolute;
-                                 bottom: -4.5px;
+                                 bottom: 88px;
                                  left: -3px;
                                  width: 9px;
                                  height: 9px;
@@ -674,5 +700,28 @@
                  }
              }
          }
+     }
+ }
+
+ .active2 {
+     width: 16px;
+     height: 16px;
+     background: url(../images/btn.png) -128px -195px no-repeat;
+     &:hover {
+         background: url(../images/btn.png) -144px -195px no-repeat;
+     }
+ }
+
+ .active3 {
+     background: url(../images/btn.png) 0 -195px no-repeat;
+     &:hover {
+         background: url(../images/btn.png) -16px -195px no-repeat;
+     }
+ }
+
+ .active4 {
+     background: url(../images/btn.png) -64px -195px no-repeat;
+     &:hover {
+         background: url(../images/btn.png) -80px -195px no-repeat;
      }
  }

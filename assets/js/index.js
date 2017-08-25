@@ -24,7 +24,6 @@ window.onload = function() {
                 ul1[j].className = 'hide';
             }
             var index = this.getAttribute('data-index');
-            console.log(index);
             li1[index].className = 'active';
             ul1[index].className = '';
         }
@@ -36,7 +35,6 @@ window.onload = function() {
         console.log($('.hotradio-right .hotsinger').eq(3 * index));
     })
     $('.hotsinger-point li').mouseover(function() {
-        console.log(index);
         var num = $(this).index();
         console.log()
         $('.hotradio-right .hotsinger').eq(3 * index + num).show().siblings().hide();

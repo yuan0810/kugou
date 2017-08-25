@@ -196,7 +196,7 @@ window.onload = function() {
             e = ent || window.event;
             var y = progress1.offsetHeight - e.offsetY;
             line1.style.height = y + 'px';
-            rage1.style.bottom = y - rage.offsetHeight / 2 + 'px';
+            rage1.style.bottom = y - rage1.offsetHeight / 2 + 'px';
             var bili = y / progress1.offsetHeight;
             video.volume = bili;
             console.log(bili);
