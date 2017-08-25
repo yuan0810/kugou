@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+.active {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -316,14 +322,35 @@ a {
 
 .playvideo .Video {
   position: relative;
-  width: 1000px;
-  height: 494px;
+  width: 100%;
+  height: 100%;
   background-color: #000;
 }
 
 .playvideo .Video > video {
   width: 100%;
   height: 100%;
+}
+
+.playvideo .Video .playbig {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.playvideo .Video .playbig .icon-bofang1 {
+  width: 100%;
+  height: 100%;
+  font-size: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
 }
 
 .playvideo .Video .controls {
@@ -347,7 +374,7 @@ a {
   border-radius: 50%;
 }
 
-.playvideo .Video .controls .bofang .icon-iconfontbofang {
+.playvideo .Video .controls .bofang .iconfont {
   line-height: 26px;
   font-size: 28px;
   color: #fff;
@@ -357,7 +384,7 @@ a {
   position: absolute;
   top: 17px;
   left: 43px;
-  width: 770px;
+  width: 76%;
   height: 2px;
   background-color: #919191;
 }
@@ -366,7 +393,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 0;
   height: 2px;
   background-color: #fff;
 }
@@ -383,7 +410,7 @@ a {
 .playvideo .Video .controls .time {
   position: absolute;
   top: 0;
-  left: 823px;
+  right: 11%;
   width: 75px;
   line-height: 36px;
   font-size: 12px;
@@ -397,7 +424,7 @@ a {
 .playvideo .Video .controls .ctro {
   position: absolute;
   top: 0;
-  left: 900px;
+  right: 7%;
   width: 30px;
   height: 36px;
   color: #fff;
@@ -409,6 +436,7 @@ a {
   top: 5px;
   right: 0;
   color: #fff;
+  width: 6%;
   height: 26px;
   border-left: 1px dashed #363636;
 }
@@ -430,10 +458,10 @@ a {
 
 .playvideo .Video .controls .kongzhi div:nth-child(1) {
   position: relative;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
-.playvideo .Video .controls .kongzhi div:nth-child(1) .yinlinag {
+.playvideo .Video .controls .kongzhi div:nth-child(1) .yinliang {
   position: absolute;
   top: -153px;
   left: -1px;
@@ -441,9 +469,10 @@ a {
   height: 180px;
   background-color: rgba(37, 41, 44, 0.8);
   z-index: -1;
+  display: none;
 }
 
-.playvideo .Video .controls .kongzhi div:nth-child(1) .yinlinag .progress {
+.playvideo .Video .controls .kongzhi div:nth-child(1) .yinliang .progress1 {
   position: absolute;
   left: 7px;
   top: 10px;
@@ -452,12 +481,21 @@ a {
   background-color: #000;
 }
 
-.playvideo .Video .controls .kongzhi div:nth-child(1) .yinlinag .progress .line1 {
+.playvideo .Video .controls .kongzhi div:nth-child(1) .yinliang .progress1 .line1 {
   position: absolute;
   bottom: 0;
-  left: -4px;
+  left: -6px;
   width: 4px;
-  height: 10px;
+  height: 130px;
+  background-color: #fff;
+}
+
+.playvideo .Video .controls .kongzhi div:nth-child(1) .yinliang .progress1 .rage1 {
+  position: absolute;
+  bottom: 128px;
+  left: -3px;
+  width: 10px;
+  height: 4px;
   background-color: #fff;
 }
 
