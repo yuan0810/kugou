@@ -15,6 +15,7 @@ window.onload = function() {
         paginationClickable: true
     })
     /*选项卡*/
+    console.log(document.documentElement.clientHeight);
     var li1 = document.querySelectorAll('.option-left .newlist li');
     var ul1 = document.querySelectorAll('.playlist ul');
     for (var i = 0; i < li1.length; i++) {

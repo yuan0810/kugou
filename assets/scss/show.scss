@@ -354,33 +354,33 @@
              .alllyric {
                  position: relative;
                  margin-top: 17px;
-                 height: 329px;
+                 height: 235px;
                  color: #fff;
                  font-size: 15px;
                  line-height: 30px;
                  overflow: hidden;
                  .lyric {
-                     width: 448px;
-                     height: 1870px;
+                     position: absolute;
+                     width: 480px;
+                     height: 235px;
                      opacity: 0.6;
+                     overflow-x: hidden;
+                     overflow-y: auto;
                      p {
                          width: 420px;
                          height: 34px;
                      }
                  }
-                 .scroll {
+
+                 .scroll-btn {
                      position: absolute;
                      top: 0;
                      right: 0;
                      width: 8px;
-                     height: 329px;
-                     .scroll-btn {
-                         width: 8px;
-                         height: 58px;
-                         background: #fff;
-                         opacity: 0.2;
-                         border-radius: 8px;
-                     }
+                     height: 58px;
+                     background: #fff;
+                     opacity: 0.2;
+                     border-radius: 8px;
                  }
              }
          }
@@ -606,10 +606,11 @@
                      .playloop {
                          position: absolute;
                          top: -148px;
-                         left: -5px;
+                         left: -55px;
                          width: 100px;
                          height: 95px;
                          padding: 10px;
+                         display: none;
                          background: url(../images/play_style.png) no-repeat left top;
                          >a {
                              display: block;
@@ -625,12 +626,10 @@
                                  height: 16px;
                                  margin: 7px 8px;
                              }
+
                              .listloop {
                                  vertical-align: middle;
-                                 background: url(../images/btn.png) -64px -179px no-repeat;
-                                 &:hover {
-                                     background: url(../images/btn.png) -80px -179px no-repeat;
-                                 }
+                                 background: url(../images/btn.png) -80px -179px no-repeat;
                              }
                              .oneloop {
                                  vertical-align: middle;
@@ -646,6 +645,9 @@
                                      background: url(../images/btn.png) -144px -179px no-repeat;
                                  }
                              }
+                         }
+                         .listlist {
+                             color: #19b5f0;
                          }
                      }
                  }
@@ -724,4 +726,8 @@
      &:hover {
          background: url(../images/btn.png) -80px -195px no-repeat;
      }
+ }
+
+ .active5 {
+     color: #01e5ff;
  }

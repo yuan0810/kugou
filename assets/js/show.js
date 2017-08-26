@@ -24,21 +24,11 @@ window.onload = function() {
             this.classList.remove('active');
         }
     }
-    /*时间改变的时候*/
 
-    audio.ontimeupdate = function() {
-        ontime.innerHTML = time(audio.currentTime);
-        var bili = audio.currentTime / audio.duration;
-        ball.style.left = progress.offsetWidth * bili - ball.offsetWidth / 2 + 'px';
-        line.style.width = progress.offsetWidth * bili + 'px';
-    }
+
     /*当播放完毕的时候*/
     audio.onended = function() {
         play.className = 'play';
-    }
-    audio.ondurationchange = function() {
-
-        totaltime.innerHTML = time(audio.duration);
     }
 
     function time(t) {
@@ -85,7 +75,6 @@ window.onload = function() {
         audio.currentTime = audio.duration * bili;
     }
     /*音量控制*/
-    console.log(ylj);
     ylj.onclick = function() {
         if (audio.muted) {
             audio.muted = false;
@@ -178,5 +167,112 @@ window.onload = function() {
             voice.classList.remove('active3');
         }
     }
+    var str = `
+[00:00.71]薛之谦 - 丑八怪
+↵[00:01.76]词：甘世佳
+↵[00:02.67]曲：李荣浩
+↵[00:03.43]编曲：李荣浩
+↵[00:20.47]如果世界漆黑 其实我很美
+↵[00:23.81]在爱情里面进退 最多被消费
+↵[00:27.58]无关痛痒的是非
+↵[00:29.56]又怎么不对 无所谓
+↵[00:35.86]如果像你一样 总有人赞美
+↵[00:39.17]围绕着我的卑微 也许能消退
+↵[00:43.04]其实我并不在意 有很多机会
+↵[00:46.39]像巨人一样的无畏
+↵[00:49.38]放纵我 心里的鬼
+↵[00:51.11]可是我不配
+↵[00:54.52]丑八怪 能否别把灯打开
+↵[01:01.88]我要的爱 出没在
+↵[01:06.50]漆黑一片的舞台
+↵[01:09.39]丑八怪 在这暧昧的时代
+↵[01:17.46]我的存在 像意外
+↵[01:37.69]有人用一滴泪 会红颜祸水
+↵[01:41.34]有人丢掉称谓 什么也不会
+↵[01:44.99]只要你足够虚伪 就不怕魔鬼 对不对
+↵[01:52.97]如果剧本写好 谁比谁高贵
+↵[01:56.62]我只能沉默以对 美丽本无罪
+↵[02:00.68]当欲望开始贪杯 有更多机会
+↵[02:03.93]像尘埃一样的无畏 化成灰 谁认得谁
+↵[02:08.41]管他配不配
+↵[02:11.95]丑八怪 能否别把灯打开
+↵[02:19.36]我要的爱 出没在
+↵[02:23.94]漆黑一片的舞台
+↵[02:26.89]丑八怪 在这暧昧的时代
+↵[02:34.79]我的存在 不意外
+↵[03:01.76]丑八怪 其实见多就不怪
+↵[03:09.75]放肆去high 用力踩
+↵[03:14.02]那不堪一击的洁白
+↵[03:17.18]丑八怪 这是我们的时代
+↵[03:25.28]我不存在 才意外.`;
+    var lyric = document.querySelector('.lyric');
+    var arr = str.split('↵');
+    var times = [];
+    var str = '';
+    arr.forEach(function(value) {
+        times.push(turnTime(value.slice(value.indexOf('[') + 1, value.lastIndexOf(']'))));
+        str += '<p>' + value.slice(value.lastIndexOf(']') + 1, value.length - 1) + '</p>';
+
+    })
+    lyric.innerHTML = str;
+    var p = document.querySelectorAll('.lyric p');
+    p[0].className = 'active5';
+    audio.ondurationchange = function() {
+
+        times.push(audio.duration * 1000);
+    }
+    audio.onloadedmetadata = function() {
+        console.log(audio.duration)
+
+        totaltime.innerHTML = time(audio.duration);
+    }
+    audio.ontimeupdate = function() {
+        ontime.innerHTML = time(audio.currentTime);
+        var bili = audio.currentTime / audio.duration;
+        ball.style.left = progress.offsetWidth * bili - ball.offsetWidth / 2 + 'px';
+        line.style.width = progress.offsetWidth * bili + 'px';
+        var current = Math.floor(audio.currentTime * 1000);
+        for (var i = 0; i < times.length; i++) {
+            if (times[i] < current && current < times[i + 1]) {
+                for (var j = 0; j < times.length - 1; j++) {
+                    p[j].className = '';
+                }
+                p[i].className = 'active5';
+                if (i > 4 && i < p.length - 7) {
+                    lyric.style.top = -34 * (i - 4) + 'px';
+                }
+                if (i > p.length - 7) {
+                    lyric.style.top = -(p.length - 7) * 34 + 'px';
+                }
+                break;
+            }
+        }
+
+    }
+
+    function turnTime(str) {
+        var haomiao = str.slice(0, 2) * 60 * 1000 + str.slice(3, 5) * 1000 + str.slice(6) * 10;
+        return haomiao;
+    }
+    $('.lyric').scroll(function() {
+        var sTop = $(this).scrollTop();
+        var sHeight = $(this).get(0).scrollHeight;
+        var top = sTop / sHeight * $(this).height();
+        if (top + $('.scroll-btn').height() >= $(this).height()) {
+            top = $(this).height() - $('.scroll-btn').height();
+        }
+        $('.scroll-btn').css('top', top);
+    })
+    var a = true;
+    $('.loop').click(function() {
+        if (a) {
+            $('.playloop').css('display', 'block');
+            a = false;
+
+        } else {
+            $('.playloop').css('display', 'none');
+            a = true;
+        }
+    })
 
 }

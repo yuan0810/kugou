@@ -415,7 +415,7 @@ a {
 .audio .content .content-right .alllyric {
   position: relative;
   margin-top: 17px;
-  height: 329px;
+  height: 235px;
   color: #fff;
   font-size: 15px;
   line-height: 30px;
@@ -423,9 +423,12 @@ a {
 }
 
 .audio .content .content-right .alllyric .lyric {
-  width: 448px;
-  height: 1870px;
+  position: absolute;
+  width: 480px;
+  height: 235px;
   opacity: 0.6;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .audio .content .content-right .alllyric .lyric p {
@@ -433,15 +436,10 @@ a {
   height: 34px;
 }
 
-.audio .content .content-right .alllyric .scroll {
+.audio .content .content-right .alllyric .scroll-btn {
   position: absolute;
   top: 0;
   right: 0;
-  width: 8px;
-  height: 329px;
-}
-
-.audio .content .content-right .alllyric .scroll .scroll-btn {
   width: 8px;
   height: 58px;
   background: #fff;
@@ -699,10 +697,11 @@ a {
 .audio .control .play-middle .control-btn .loop .playloop {
   position: absolute;
   top: -148px;
-  left: -5px;
+  left: -55px;
   width: 100px;
   height: 95px;
   padding: 10px;
+  display: none;
   background: url(../images/play_style.png) no-repeat left top;
 }
 
@@ -725,10 +724,6 @@ a {
 
 .audio .control .play-middle .control-btn .loop .playloop > a .listloop {
   vertical-align: middle;
-  background: url(../images/btn.png) -64px -179px no-repeat;
-}
-
-.audio .control .play-middle .control-btn .loop .playloop > a .listloop:hover {
   background: url(../images/btn.png) -80px -179px no-repeat;
 }
 
@@ -748,6 +743,10 @@ a {
 
 .audio .control .play-middle .control-btn .loop .playloop > a .random:hover {
   background: url(../images/btn.png) -144px -179px no-repeat;
+}
+
+.audio .control .play-middle .control-btn .loop .playloop .listlist {
+  color: #19b5f0;
 }
 
 .audio .control .play-middle .control-btn .download {
@@ -831,4 +830,8 @@ a {
 
 .active4:hover {
   background: url(../images/btn.png) -80px -195px no-repeat;
+}
+
+.active5 {
+  color: #01e5ff;
 }
