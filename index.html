@@ -33,8 +33,8 @@
                     <li><a href="">会员中心</a></li>
                 </ul>
                 <div class="login-reg">
-                    <a href="" class="login">登录</a>
-                    <a href="" class="reg">注册</a>
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="reg.html" class="reg">注册</a>
                 </div>
             </div>
         </div>
@@ -1313,13 +1313,13 @@
             </div>
         </a>
         <div class="shadow">
-            <div class="reg">
+            <div class="login">
                 <div>登录酷狗音乐</div>
                 <form>
                     <div>
                         <div>
                             <label>帐号：</label>
-                            <input type="text" name="name" value="用户名/手机/邮箱">
+                            <input type="text" name="name" value="用户名/手机/邮箱" class="name">
                         </div>
                     </div>
                     <div>
@@ -1328,13 +1328,32 @@
                             <input type="text" name="password" value="" placeholder="请输入密码">
                         </div>
                     </div>
+                    <div>
+                        <input type="checkbox" name="" checked>
+                        <label>下次自动登录</label>
+                        <a href="login.html">立即注册</a>
+                    </div>
+                    <div></div>
+                    <input type="button" name="" value="登录">
+                    <div class="last">
+                        <div>其他方式登录：<a href=""></a><a href=""></a></div>
+                        <a href="">用户协议</a>
+                        <a href="">隐私政策</a>
+                    </div>
                 </form>
+                <a href="javascript:;" class="close"><i></i></a>
             </div>
         </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/dialog.js"></script>
+    <style>
+    .ui-dialog-body {
+        padding: 0;
+    }
+    </style>
 </body>
 
 </html>

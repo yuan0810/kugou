@@ -7,6 +7,7 @@
     <link href="assets/images/index.ico" rel="icon">
     <link rel="stylesheet" href="assets/css/person.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/validForm.css">
 </head>
 
 <body>
@@ -106,7 +107,13 @@
                                     </div>
                                     <div class="file">
                                         <p>请选择图片文件，最佳尺寸165 x 165，支持JPG，JPEG，GIF，PNG)</p>
-                                        <input type="file" name="file" value="浏览">
+                                        <a href="javascript:;" class="liulan">
+                                        浏览
+                                            <input type="file" name="file" value="浏览">
+                                        </a>
+                                        <a href="javascript:;" class="liulan changshuan">上传
+                                            <input type="button" name="" value="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -220,10 +227,137 @@
                             </form>
                         </li>
                         <li>
-                            <p>亲人亲人亲人</p>
+                            <div>
+                                <form class="demoform">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" class="td1">
+                                                    <label>这是您第一次设置酷狗密码，设置成功后，就可以直接用帐号或ID登陆酷狗了哦！</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td2">
+                                                    <label>
+                                                        <span>*</span> 新密码：
+                                                    </label>
+                                                </td>
+                                                <td class="td3">
+                                                    <input type="text" type="password" value="" name="password1" errormsg="请输入6-16位的数字或字符" nullmsg="不能为空" sucmsg="" datatype="*6-16" class="inputxt">
+                                                    <div>
+                                                        <div>密码强度:弱</div>
+                                                        <div>
+                                                            <span class="line1"></span>
+                                                            <span class="line2"></span>
+                                                        </div>
+                                                        <div>强</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td2 td4">
+                                                    <label>
+                                                        <span>*</span> 确认密码：
+                                                    </label>
+                                                </td>
+                                                <td class="td3 td4">
+                                                    <input type="text" recheck="password1" datatype="*" errormsg="密码不一致，请确认后重新输入" nullmsg="不能为空">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td2 td4">
+                                                    <label>
+                                                        <span>*</span> 验证码：
+                                                    </label>
+                                                </td>
+                                                <td class="td3 td4 td5">
+                                                    <input type="text" name="">
+                                                    <img src="assets/images/t=1503824272376.jpg">
+                                                    <a href="javascript:;">换一张</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="td6">
+                                                    <input type="button" name="" value="保存修改">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
                         </li>
                         <li>
-                            <p>情人情人情人</p>
+                            <div>
+                                <div class="tishi"><i></i><span>您还没有安全邮箱哦</span>
+                                </div>
+                                <div class="yanzheng">
+                                    <span class="email"></span>
+                                    <p class="p1">
+                                        安全邮箱
+                                        <span>(可用于找回密码和登录帐户)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即设置</a>
+                                </div>
+                                <div class="yanzheng">
+                                    <span class="phone"></span>
+                                    <p class="p1">
+                                        安全手机
+                                        <span>(可用于找回密码和登录帐号)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即绑定</a>
+                                </div>
+                                <div class="yanzheng">
+                                    <span class="anquan"></span>
+                                    <p class="p1">
+                                        安全问题
+                                        <span>(可用于找回密码)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即设置</a>
+                                </div>
+                                <div class="yanzheng">
+                                    <span class="QQ"></span>
+                                    <p class="p1">
+                                        QQ
+                                        <span>(可用于登录帐号)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即绑定</a>
+                                </div>
+                                <div class="yanzheng">
+                                    <span class="wechat"></span>
+                                    <p class="p1">
+                                        微信
+                                        <span>(可用于登录帐号)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即绑定</a>
+                                </div>
+                                <div class="yanzheng no-border">
+                                    <span class="weibo"></span>
+                                    <p class="p1">
+                                        微博:
+                                        <span>(可用于登录帐号)</span>
+                                    </p>
+                                    <p class="p2">
+                                        状态：<span>未设置</span>
+                                    </p>
+                                    <a href="">立即绑定</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

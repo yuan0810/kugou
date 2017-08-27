@@ -15,7 +15,6 @@ window.onload = function() {
         paginationClickable: true
     })
     /*选项卡*/
-    console.log(document.documentElement.clientHeight);
     var li1 = document.querySelectorAll('.option-left .newlist li');
     var ul1 = document.querySelectorAll('.playlist ul');
     for (var i = 0; i < li1.length; i++) {
@@ -59,4 +58,23 @@ window.onload = function() {
             scrollTop: 0
         }, 300)
     })
+    /*登录*/
+    var d = dialog({
+        content: $('.shadow'),
+        lock: true,
+        fixed: true,
+    })
+    $('.header .login').click(function() {
+
+        d.showModal()
+
+    })
+    $('.close').click(function() {
+        d.close();
+    })
+    $('.shadow .name').focus(function() {
+        $('.shadow .name').attr('value', ' ');
+
+    })
+
 }

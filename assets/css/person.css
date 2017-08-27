@@ -424,7 +424,6 @@ a {
 .main .xuanxiangka .cont {
   width: 737px;
   height: 533px;
-  background-color: pink;
 }
 
 .main .xuanxiangka .cont li {
@@ -441,7 +440,6 @@ a {
   width: 657px;
   height: 277px;
   padding: 30px 40px 0 40px;
-  background: yellow;
 }
 
 .main .xuanxiangka .cont li:nth-child(1) .picture .like {
@@ -475,13 +473,43 @@ a {
   margin-left: 18px;
 }
 
-.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file input {
+.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file .liulan {
+  position: relative;
+  display: inline-block;
+  padding: 0 13px;
   width: 70px;
   height: 20px;
-  padding: 0 15px;
+  line-height: 20px;
   background: #e4e4e4;
-  outline: none;
+  border: 2px solid #54ade7;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  overflow: hidden;
+  color: #a0a0a0;
+}
+
+.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file .liulan:hover {
+  background-color: #b9e3f6;
+}
+
+.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file .liulan input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 20px;
+  opacity: 0;
   border: 1px solid #54ade7;
+}
+
+.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file .changshuan {
+  border: 2px solid #e8e9ea;
+  background-color: #f7f7f7;
+}
+
+.main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file .changshuan:hover {
+  background-color: #f7f7f7;
 }
 
 .main .xuanxiangka .cont li:nth-child(1) .picture .touxiang .file p {
@@ -697,6 +725,265 @@ a {
 
 .main .xuanxiangka .cont li:nth-child(2) .xiugai-right a:hover {
   background: -webkit-linear-gradient(top, #8ad2ff, #6ac1f9);
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div {
+  width: 657px;
+  height: 258px;
+  padding: 30px 40px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td1 {
+  width: 100%;
+  height: 19.5px;
+  padding-bottom: 15px;
+  color: #474747;
+  font-size: 13px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td2 {
+  width: 139px;
+  height: 60px;
+  line-height: 38px;
+  padding-bottom: 15px;
+  color: #474747;
+  font-size: 14px;
+  text-align: right;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td2 span {
+  color: #f00;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 {
+  width: 517px;
+  height: 60px;
+  padding-bottom: 15px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 input {
+  width: 275px;
+  height: 22px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  outline: 0;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 input:hover {
+  background-color: #e2f4ff;
+  border-color: #54ade7;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div {
+  height: 12px;
+  margin-top: 12px;
+  line-height: 12px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(1) {
+  float: left;
+  color: #7b7b7b;
+  font-size: 12px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(2) {
+  position: relative;
+  float: left;
+  width: 169px;
+  height: 12px;
+  margin: 0 3px;
+  background-color: #e0e0e0;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(2) span {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 2px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(2) .line1 {
+  left: 55px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(2) .line2 {
+  right: 55px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td3 > div > div:nth-child(3) {
+  float: left;
+  width: 12px;
+  height: 17px;
+  color: #7b7b7b;
+  font-size: 12px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td4 {
+  height: 38px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td5 {
+  line-height: 38px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td5 input {
+  width: 120px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td5 img {
+  width: 120px;
+  height: 40px;
+  padding-top: 3px;
+  vertical-align: middle;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td5 a {
+  display: inline-block;
+  width: 39px;
+  height: 28px;
+  margin-right: 5px;
+  color: #007ac1;
+  font-size: 13px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td6 {
+  width: 517px;
+  height: 27px;
+  padding-bottom: 15px;
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td6 input {
+  height: 27px;
+  color: #fff;
+  padding: 0 22px;
+  outline: 0;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(top, #68c4ff, #4ca4dd);
+}
+
+.main .xuanxiangka .cont li:nth-child(3) > div .td6 input:hover {
+  background: -webkit-linear-gradient(top, #8ad2ff, #6ac1f9);
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div {
+  width: 737px;
+  height: 451px;
+  padding-top: 10px;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .tishi {
+  width: 100%;
+  height: 19.5px;
+  padding: 3px 5px;
+  background-color: #fadada;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .tishi i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background: url(../images/kg_uc_splice.png) 0 -100px no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .tishi span {
+  color: #d70f0f;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 70px;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .email {
+  background: url(../images/account_icon.png) no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .phone {
+  background: url(../images/account_icon.png) -60px 0 no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .anquan {
+  background: url(../images/account_icon.png) 0 -30px no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .QQ {
+  background: url(../images/account_icon.png) no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .wechat {
+  background: url(../images/account_icon.png) -60px -60px no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .weibo {
+  background: url(../images/account_icon.png) -30px -60px no-repeat;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .p1 {
+  display: inline-block;
+  width: 480px;
+  height: 32px;
+  line-height: 32px;
+  color: #333;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .p1 > span {
+  line-height: 30px;
+  font-size: 14px;
+  color: #999;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .p2 {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  margin-right: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+  color: #474747;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng .p2 span {
+  color: #666;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng a {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #169af3;
+  color: #fff;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .yanzheng a:hover {
+  background-color: #158fe1;
+}
+
+.main .xuanxiangka .cont li:nth-child(4) > div .no-border {
+  border-bottom: 0;
 }
 
 /*==========以下部分是Validform必须的===========*/

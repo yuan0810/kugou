@@ -1,8 +1,4 @@
 $(function() {
-    $('.clicka').click(function() {
-        $(this).parent().siblings().slideToggle();
-        $(this).children().toggleClass('active');
-    })
     /*登录*/
     var d = dialog({
         content: $('.shadow'),
@@ -21,4 +17,7 @@ $(function() {
         $('.shadow .name').attr('value', ' ');
 
     })
+    $(".demoform").Validform({
+        tiptype: 4
+    });
 })

@@ -465,4 +465,7 @@ window.onload = function() {
         }
         city.innerHTML = city_str;
     }
+    $(".demoform").Validform({
+        tiptype: 4
+    });
 }

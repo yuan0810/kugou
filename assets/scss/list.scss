@@ -675,3 +675,199 @@
          }
      }
  }
+
+ .shadow {
+     .login {
+         width: 368px;
+         height: 316px;
+         padding: 30px 35px;
+         background: #fff;
+         font: 12px/1.5 "Microsoft YaHei", Tahoma, Arial, "b8bf53", sans-serif;
+         font-size: 0;
+
+         >div:nth-child(1) {
+             width: 368px;
+             height: 22px;
+             margin-bottom: 10px;
+             line-height: 22px;
+             font-size: 22px;
+             color: #333;
+             font-family: "Microsoft YaHei";
+         }
+         form {
+             width: 368px;
+             height: 275px;
+
+             div:nth-child(1) {
+                 width: 368px;
+                 height: 38px;
+                 margin-bottom: 11px;
+                 >div {
+                     width: 346px;
+                     height: 22px;
+                     margin-top: 38px;
+                     padding: 7px 10px;
+                     border: 1px solid #ccc;
+                     background: #f6f6f6;
+                     font-size: 12px;
+                     label {
+                         float: left;
+                         width: 36px;
+                         height: 22px;
+                         line-height: 22px;
+                         color: #7b7b7b;
+                     }
+                     input {
+                         float: right;
+                         width: 310px;
+                         height: 22px;
+                         line-height: 22px;
+                         font-size: 13px;
+                         outline: 0;
+                         border: 0;
+                         background: #f6f6f6;
+                         color: #a1a1a1;
+                     }
+                 }
+             }
+             div:nth-child(2) {
+                 width: 368px;
+                 height: 38px;
+                 margin-bottom: 11px;
+                 >div {
+                     width: 346px;
+                     height: 22px;
+                     padding: 7px 10px;
+                     border: 1px solid #ccc;
+                     background: #f6f6f6;
+                     font-size: 12px;
+                     label {
+                         float: left;
+                         width: 36px;
+                         height: 22px;
+                         line-height: 22px;
+                         color: #7b7b7b;
+                     }
+                     input {
+                         float: right;
+                         width: 310px;
+                         height: 22px;
+                         line-height: 22px;
+                         outline: 0;
+                         border: 0;
+                         background: #f6f6f6;
+                         color: #a1a1a1;
+                     }
+                 }
+             }
+             div:nth-child(3) {
+                 width: 368px;
+                 height: 18px;
+                 margin-bottom: 10px;
+                 input {
+                     float: left;
+                     margin-right: 5px;
+                 }
+                 label {
+                     width: 72px;
+                     height: 17px;
+                     font-size: 12px;
+                     color: #333;
+                 }
+                 a {
+                     float: right;
+                     display: inline-block;
+                     width: 48px;
+                     height: 17px;
+                     color: #7b7b7b;
+                     font-size: 12px;
+                 }
+             }
+             div:nth-child(4) {
+                 width: 368px;
+                 height: 24px;
+             }
+             >input {
+                 width: 368px;
+                 height: 40px;
+                 background-color: #2299ed;
+                 border-radius: 4px;
+                 border: 0;
+                 outline: 0;
+                 font: 12px/1.5 "Microsoft YaHei", Tahoma, Arial, "b8bf53", sans-serif;
+                 font-size: 16px;
+                 color: #fff;
+                 text-align: center;
+                 margin-bottom: 10px;
+                 &:hover {
+                     background-color: #158fe1;
+                 }
+             }
+             .last {
+                 width: 368px;
+                 height: 38px;
+                 >div {
+                     float: left;
+                     width: 260px;
+                     height: 18px;
+                     padding-top: 20px;
+                     margin-bottom: 0;
+                     color: #7b7b7b;
+                     font-size: 12px;
+                     line-height: 18px;
+                     >a {
+                         display: inline-block;
+                         height: 16px;
+                         padding-left: 16px;
+                         margin-right: 5px;
+                         vertical-align: middle;
+                     }
+                     a:nth-child(1) {
+                         background: url(../images/kg_popup_splice01.png) -25px -125px no-repeat;
+                     }
+                     a:nth-child(2) {
+                         background: url(../images/kg_popup_splice01.png) -125px -125px no-repeat;
+                     }
+                 }
+                 >a {
+                     float: right;
+                     display: inline-block;
+                     width: 48px;
+                     height: 17px;
+                     padding-top: 21px;
+                     font-size: 12px;
+                     color: #7b7b7b;
+                     margin-right: 5px;
+                     text-decoration: underline;
+                     &:hover {
+                         color: #474747;
+                     }
+                 }
+             }
+         }
+         .close {
+             position: absolute;
+             top: 0;
+             right: 0;
+             display: inline-block;
+             width: 37px;
+             height: 37px;
+             i {
+                 position: absolute;
+                 left: 0;
+                 right: 0;
+                 top: 0;
+                 bottom: 0;
+                 margin: auto;
+                 display: block;
+                 width: 14px;
+                 height: 13px;
+                 opacity: 0.6;
+                 background: url(../images/kg_popup_splice01.png) -175px -100px no-repeat;
+                 &:hover {
+                     opacity: 1;
+                 }
+             }
+         }
+     }
+ }
