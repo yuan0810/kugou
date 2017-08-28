@@ -292,5 +292,15 @@ window.onload = function() {
         $('.shadow .name').attr('value', ' ');
 
     })
+    var str1 = "薛之谦-丑八怪_薛之谦歌词|歌曲下载_酷狗音乐_高音质在线试听";
+    var index1 = 0;
+    setInterval(function() {
+        var text = str1.slice(index1);
+        $('title').text(text);
+        index1++;
+        if (str1.length - index1 <= 12) {
+            index1 = 0;
+        }
+    }, 300)
 
 }
