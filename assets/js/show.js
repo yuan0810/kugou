@@ -232,17 +232,18 @@ window.onload = function() {
         ball.style.left = progress.offsetWidth * bili - ball.offsetWidth / 2 + 'px';
         line.style.width = progress.offsetWidth * bili + 'px';
         var current = Math.floor(audio.currentTime * 1000);
+        // var alllyric = document.querySelector('.alllyric');
         for (var i = 0; i < times.length; i++) {
             if (times[i] < current && current < times[i + 1]) {
                 for (var j = 0; j < times.length - 1; j++) {
                     p[j].className = '';
                 }
                 p[i].className = 'active5';
-                if (i > 4 && i < p.length - 7) {
+                if (i > 4 && i < p.length - 10) {
                     lyric.style.top = -34 * (i - 4) + 'px';
                 }
-                if (i > p.length - 7) {
-                    lyric.style.top = -(p.length - 7) * 34 + 'px';
+                if (i > p.length - 10) {
+                    lyric.style.top = -(p.length - 10) * 34 + 'px';
                 }
                 break;
             }
@@ -254,8 +255,9 @@ window.onload = function() {
         var haomiao = str.slice(0, 2) * 60 * 1000 + str.slice(3, 5) * 1000 + str.slice(6) * 10;
         return haomiao;
     }
-    $('.lyric').scroll(function() {
+    $('.alllyric').scroll(function() {
         var sTop = $(this).scrollTop();
+        console.log(sTop)
         var sHeight = $(this).get(0).scrollHeight;
         var top = sTop / sHeight * $(this).height();
         if (top + $('.scroll-btn').height() >= $(this).height()) {

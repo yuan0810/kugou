@@ -382,6 +382,14 @@ a {
   height: 500px;
   margin-top: -7px;
   font-size: 0;
+  /* .scroll {
+                 position: relative;
+                 width: 460px;
+                 height: 235px;
+                 margin-top: 17px;
+                 overflow: hidden;
+                
+             } */
 }
 
 .audio .content .content-right .songname {
@@ -412,39 +420,45 @@ a {
   color: #fff;
 }
 
-.audio .content .content-right .alllyric {
+.audio .content .content-right .scroll-y {
   position: relative;
-  margin-top: 17px;
-  height: 235px;
-  color: #fff;
-  font-size: 15px;
-  line-height: 30px;
-  overflow: hidden;
+  width: 460px;
+  height: 329px;
 }
 
-.audio .content .content-right .alllyric .lyric {
-  position: absolute;
-  width: 480px;
-  height: 235px;
-  opacity: 0.6;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.audio .content .content-right .alllyric .lyric p {
-  width: 420px;
-  height: 34px;
-}
-
-.audio .content .content-right .alllyric .scroll-btn {
+.audio .content .content-right .scroll-y .scroll-btn {
   position: absolute;
   top: 0;
   right: 0;
   width: 8px;
-  height: 58px;
-  background: #fff;
+  height: 87px;
+  background-color: #fff;
   opacity: 0.2;
+  z-index: 9999;
   border-radius: 8px;
+}
+
+.audio .content .content-right .scroll-y .alllyric {
+  position: relative;
+  width: 480px;
+  height: 329px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.audio .content .content-right .scroll-y .alllyric .lyric {
+  position: absolute;
+  width: 480px;
+  height: 329px;
+  opacity: 0.6;
+}
+
+.audio .content .content-right .scroll-y .alllyric .lyric p {
+  width: 420px;
+  height: 34px;
 }
 
 .audio .control {
