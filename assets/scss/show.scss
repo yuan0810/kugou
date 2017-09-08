@@ -362,7 +362,8 @@
              .scroll-y {
                  position: relative;
                  width: 460px;
-                 height: 329px; // overflow-x: hidden;
+                 height: 329px;
+                 overflow-x: hidden;
                  .scroll-btn {
                      position: absolute;
                      top: 0;

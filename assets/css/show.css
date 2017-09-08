@@ -424,6 +424,7 @@ a {
   position: relative;
   width: 460px;
   height: 329px;
+  overflow-x: hidden;
 }
 
 .audio .content .content-right .scroll-y .scroll-btn {
